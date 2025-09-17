@@ -1,5 +1,5 @@
 export default function Header() {
     return <div>
-        sono l'header
+        sono l&apos;header
     </div>
 }
