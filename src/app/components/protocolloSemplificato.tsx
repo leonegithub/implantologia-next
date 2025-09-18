@@ -68,7 +68,7 @@ export default function ProtocolloSemplificato() {
                             src={ossoDQuattro}
                             alt={"osso-d3"}
                             width={400}
-                            className="mt-5"
+                            className="mt-5 pointer-none:"
                         />
                         <div className="red underline mt-5 text-xl">
                             <Link
