@@ -1,11 +1,6 @@
-import TextBlock from './textBlock';
 import Image from "next/image";
 import OTwo from '@/../../public/O32.png'
 import OThree from '@/../public/O35.png'
-import ossoDthree from '@/../public/ossod3.png';
-import ossoDUno from '@/../public/ossod1.png'
-import ossoDQuattro from '@/../public/ossod4.png'
-import Link from "next/link";
 
 export default function ProtocolloSemplificatoDue() {
     return (
