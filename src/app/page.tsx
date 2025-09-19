@@ -4,6 +4,9 @@ import One from '@/../public/1.png'
 import Two from '@/../public/2.png'
 import Three from '@/../public/3.png'
 import Four from '@/../public/4.png'
+import Image from "next/image";
+import homeTwentyNine from '@/../public/homepage-2.9.png'
+import homeThirtyEight from '@/../public/homepage-3.8.png'
 
 export default function Home() {
     return (
@@ -34,13 +37,24 @@ export default function Home() {
                 />
             </div>
 
-            <div className="grid grid-cols-12">
+            <div style={{marginTop: 75}} className="grid grid-cols-12">
                 <div className="col col-span-6">
+                        <Image
+                            className="my-10 border my-10 border-red-600"
+                            src={homeTwentyNine}
+                            alt={homeTwentyNine.toString()}
+                            height={300}
+                        />
                     <Link className="red text-2xl underline" href={"/narrow-2_9-tapered"}><span className="font-bold">XCN® Narrow 2.9</span> Tapered</Link>
-
                 </div>
                 <div className="col col-span-6">
-                <Link className="red underline text-2xl" href={"narrow-3_8-tapered"}><span className="font-bold">XCN® 3.8</span> Tapered</Link>
+                        <Image
+                            className="border my-10 border-red-600"
+                            src={homeThirtyEight}
+                            alt={homeTwentyNine.toString()}
+                            height={300}
+                        />
+                    <Link className="red underline text-2xl" href={"narrow-3_8-tapered"}><span className="font-bold">XCN® 3.8</span> Tapered</Link>
                 </div>
             </div>
         </div>
