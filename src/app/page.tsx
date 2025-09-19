@@ -36,11 +36,11 @@ export default function Home() {
 
             <div className="grid grid-cols-12">
                 <div className="col col-span-6">
-                    <Link className="red underline" href={"/narrow-2_9-tapered"}>vai alla 2.9</Link>
+                    <Link className="red text-2xl underline" href={"/narrow-2_9-tapered"}><span className="font-bold">XCN® Narrow 2.9</span> Tapered</Link>
 
                 </div>
                 <div className="col col-span-6">
-                <Link className="red underline" href={"narrow-3_8-tapered"}>vai alla 3.8</Link>
+                <Link className="red underline text-2xl" href={"narrow-3_8-tapered"}><span className="font-bold">XCN® 3.8</span> Tapered</Link>
                 </div>
             </div>
         </div>
