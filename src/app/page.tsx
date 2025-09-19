@@ -1,23 +1,48 @@
-import MinMax from "@/app/components/minMax";
-import ProtocolloSemplificato from '@/app/components/protocolloSemplificato';
-import OneForAll from "@/app/components/oneForAll";
-import ProtocolloSemplificatoDue from "@/app/components/protocolloSemplificatoDue";
+import Link from "next/link";
+import PicTextHome from "@/app/components/PicTextHome";
+import One from '@/../public/1.png'
+import Two from '@/../public/2.png'
+import Three from '@/../public/3.png'
+import Four from '@/../public/4.png'
 
 export default function Home() {
     return (
-        <>
-            <div className="margin">
-                <MinMax />
+        <div className="container mx-auto px-4">
+            <div className="grid grid-cols-12">
+                <h1 style={{marginBottom: "75px"}} className="col-span-9 text-5xl red">Perché scegliere gli <span className="font-bold">Impianti XCN®</span>
+                    Tapered con <span className="font-bold">connessione cono Morse autobloccante</span>?
+                </h1>
             </div>
-            <div className="margin">
-                <ProtocolloSemplificato />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <PicTextHome text={"Mantiene intatta la salute dei tessuti\n" +
+                    "peri-implantari nel lungo periodo"}
+                             picture={One}
+                />
+                <PicTextHome
+                    text={"Massimizza la stabilità meccanica"}
+                    picture={Two}
+                />
+                <PicTextHome
+                    text={"Sigilla efficacemente contro le infiltrazioni\n" +
+                    "batteriche"}
+                    picture={Three}
+                />
+                <PicTextHome
+                    text={"Ottimizza la gestione dei tessuti molli con\n" +
+                        "Platform Switching"}
+                    picture={Four}
+                />
             </div>
-            <div className="margin">
-                <OneForAll />
+
+            <div className="grid grid-cols-12">
+                <div className="col col-span-6">
+                    <Link className="red underline" href={"/narrow-2_9-tapered"}>vai alla 2.9</Link>
+
+                </div>
+                <div className="col col-span-6">
+                <Link className="red underline" href={"narrow-3_8-tapered"}>vai alla 3.8</Link>
+                </div>
             </div>
-            <div className="margin">
-                <ProtocolloSemplificatoDue />
-            </div>
-        </>
+        </div>
   );
 }

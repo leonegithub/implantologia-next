@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import './globals.css';
 import Footer from "@/app/Footer";
 import Header from "@/app/Header";
+import Script from "next/script";
 export const metadata: Metadata = {
   title: "Implantologia Leone",
 };
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <head>
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
         <link
             rel="stylesheet"
@@ -33,6 +35,7 @@ export default function RootLayout({
         {children}
     </main>
     <Footer/>
+    <Script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"/>
     </body>
     </html>
   );

@@ -8,7 +8,7 @@ export default function OneForAll() {
             <div className="container mx-auto px-4">
                 <div className="first-page-title">
                     <h1 className="text-6xl mb-4 red font-bold">
-                        <div>One and for all</div>
+                        <div>One for all</div>
                     </h1>
                 </div>
                 <div className="text-container flex flex-col md:flex-row">
