@@ -119,7 +119,6 @@ export default function Home() {
                 </h1>
             </div>
 
-            {/* Riutilizzabile */}
             <div className="flex">
             <ProductGrid products={products} />
             </div>
