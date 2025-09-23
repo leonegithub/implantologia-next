@@ -4,6 +4,8 @@ import Image from "next/image";
 import OTwo from '@/../../public/O32.jpg'
 import OThree from '@/../public/O35.jpg'
 import tabellaThreeEight from '@/../public/tabella-3.8.png'
+import osso38_d1 from '@/../public/38-d1-d2.png';
+import osso38_d2 from '@/../public/38-d3-d4.png';
 import {useState} from "react";
 
 export default function ProtocolloSemplificatoDue() {
@@ -22,7 +24,9 @@ export default function ProtocolloSemplificatoDue() {
                     </p>
                 </div>
 
-                <div className="image-container flex gap-4">
+                <div className="flex gap-10">
+
+                <div className="image-container flex">
                     <Image
                         src={OTwo}
                         alt="otwo"
@@ -35,6 +39,22 @@ export default function ProtocolloSemplificatoDue() {
                         width={400}
                         height={400}
                     />
+                </div>
+                <div className="image-container flex flex-col">
+                    <Image
+                        src={osso38_d1}
+                        alt="otwo"
+                        width={400}
+                        height={400}
+                    />
+                    <Image
+                        className="ms-2"
+                        src={osso38_d2}
+                        alt="othree"
+                        width={400}
+                        height={400}
+                    />
+                </div>
                 </div>
                 <h3 style={{paddingTop: "100px"}}>
                 <span
@@ -54,7 +74,7 @@ export default function ProtocolloSemplificatoDue() {
                         onClick={() => setModal(false)}
                     >
                         <div
-                            className="relative p-4 w-full max-w-6xl max-h-full"
+                            className="relative p-4 w-full max-w-xl max-h-full"
                             onClick={e => e.stopPropagation()}
                         >
                             <div className="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">

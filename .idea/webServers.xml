@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5f7117e8-ccb9-435a-b3df-ad888d13a8d3" name="ubuntu">
+        <fileTransfer rootFolder="/var/www/html/node/gestionale-leoclub" accessType="SFTP" host="10.10.10.8" port="22" sshConfigId="f1d3a9c0-9ad1-4ed5-8578-43a39d76e08f" sshConfig="daniele@10.10.10.8:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
