@@ -1,11 +1,12 @@
 import ProductCard from "@/app/components/productCard";
 import { StaticImageData } from "next/image";
+import React from "react";
 
 export type Product = {
     src: StaticImageData;
     alt: string;
     href: string;
-    label: string;
+    label: React.ReactNode;
 };
 
 type ProductGridProps = {

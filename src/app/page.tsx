@@ -10,11 +10,16 @@ import vantaggi1 from '@/../public/vantaggi_1.png'
 import vantaggi2 from '@/../public/vantaggi_2.png'
 import vantaggi3 from '@/../public/vantaggi_3.png'
 import bandiera from '@/../public/Bandiera.png'
-
+import caso1 from '@/../public/Caso_1-Ricci.png'
+import caso2 from '@/../public/Caso_2-Azzola.png'
+import caso3 from '@/../public/Caso_3-Belcastro.png'
+import caso4 from '@/../public/Caso_4-Guerra.png'
 import ProductGrid, { Product } from "@/app/components/productGrid";
 import ShowCaseGrid, {ShowCaseProps} from "@/app/components/showCaseGrid";
+import PicCarousel from "@/app/components/picCarousel";
 
 export default function Home() {
+    const images = [caso1, caso2, caso3, caso4];
     const products: Product[] = [
         {
             src: homeTwentyNine,
@@ -123,6 +128,10 @@ export default function Home() {
                 <ShowCaseGrid title="Progettato per ottime soluzioni cliniche" showCaseProducts={showcaseOne} />
                     <ShowCaseGrid title="I vantaggi della connessione cono-morse autobloccante " showCaseProducts={showcaseTwo} />
                 </div>
+            <div className="carosello pt-20 mt-10">
+                <h3 className="font-bold red text-4xl my-5">Casi clinici</h3>
+                <PicCarousel images={images} />
+            </div>
             </div>
     );
 }

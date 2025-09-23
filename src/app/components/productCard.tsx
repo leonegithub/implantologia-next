@@ -1,11 +1,12 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import React from "react";
 
 type ProductCardProps = {
     src: StaticImageData;
     alt: string;
     href: string;
-    label: string;
+    label: React.ReactNode;
 };
 
 export default function ProductCard({ src, alt, href, label }: ProductCardProps) {
