@@ -11,7 +11,7 @@ export type ShowCaseProps = {
 type ShowCaseGridProps = {
     showCaseProducts: ShowCaseProps[];
     title?: string;
-    link?: string;
+    link: string;
 };
 
 export default function ShowCaseGrid({ showCaseProducts, title, link }: ShowCaseGridProps) {
