@@ -23,6 +23,12 @@ import ProductGrid, { Product } from "@/app/components/productGrid";
 import ShowCaseGrid, {ShowCaseProps} from "@/app/components/showCaseGrid";
 import PicCarousel from "@/app/components/picCarousel";
 import TextBlock from "@/app/components/textBlock";
+import workflowOne from '@/../public/workflow1.png'
+import workflowTwo from '@/../public/workflow2.png'
+import workflowThree from '@/../public/workflow3.png'
+import workflowFour from '@/../public/workflow4.png'
+import workflowFive from '@/../public/workflow5.png'
+import workflowSix from '@/../public/workflow6.png'
 
 export default function Home() {
     const images = [caso1, caso2, caso3, caso4];
@@ -138,21 +144,21 @@ export default function Home() {
             </div>
             <section className="versatilita-protesica mt-20">
                 <h2 className="font-bold red text-4xl">Massima Versatilità Protesica</h2>
-                <div className="grid grid-cols-12">
-                    <div className="col col-span-6">
+                <div className="grid gap-10 grid-cols-12">
+                    <div className="col flex col-span-6">
                         <TextBlock title={"Protesi cementata"} text={"I monconi XCN® per protesi cementata, privi di\n" +
                             "canale vite, sono completamente personalizzabili,\n" +
                             "facili da preparare, più estetici e resistenti.\n" +
                             "La gamma include soluzioni compatibili con flussi\n" +
                             "analogici e digitali."} />
                         <Image
-                            className="me-5 py-15"
+                            className="py-15"
                             width={300}
                             src={protesiCementata}
                             alt="small"
                         />
                     </div>
-                    <div className="col col-span-6">
+                    <div className="col flex col-span-6">
                         <TextBlock title={"Protesi avvitata per elementi\n" +
                             "singoli con ExaConnect®"} text={"Grazie alla possibilità di gestire angolazioni fino a\n" +
                             "25° e altezze transmucose fino a 5 mm, il connettore\n" +
@@ -164,25 +170,23 @@ export default function Home() {
                             "variabili, ideali per approcci One Abutment–One\n" +
                             "Time."} />
                         <Image
-                            className="me-5 p-5"
+                            className="py-5"
                             width={300}
                             src={exaConnect}
                             alt="small"
                         />
                     </div>
-                </div>
-                <div className="grid grid-cols-12">
-                    <div className="col col-span-6">
+                    <div className="col flex col-span-6">
                         <TextBlock title={"Protesi avvitata per ponti\n" +
                             "e arcate complete"} text={"L’assenza di una vite di connessione tra fixture e moncone rende i MUA Leone estremamente efficienti, poiché richiedono la gestione di una sola vite, quella protesica. Questo semplifica notevolmente le fasi cliniche. I monconi MUA Leone offrono la gamma più ampia sul mercato, con angolazioni fino a 35° e altezze transmucose fino a 7 mm. Sono inoltre disponibili accessori dedicati alle diverse tecniche di ancoraggio protesico, come interfacce CAD-CAM e cilindri da incollaggio.\n"} />
                         <Image
-                            className="me-5 py-15"
+                            className="py-10"
                             width={300}
                             src={ponte}
                             alt="small"
                         />
                     </div>
-                    <div className="col col-span-6">
+                    <div className="col flex col-span-6">
                         <TextBlock title={"Protesi conometrica fissa\n" +
                             "e rimovibile"} text={"Con un semi-angolo di 5°, i monconi conometrici\n" +
                             "assicurano il fissaggio della struttura protesica\n" +
@@ -195,15 +199,13 @@ export default function Home() {
                             "forze di ritenzione, adatte a tutte le configurazioni\n" +
                             "protesiche."} />
                         <Image
-                            className="me-5 p-5"
+                            className="py-15"
                             width={300}
                             src={fissaRimovibile}
                             alt="small"
                         />
                     </div>
-                </div>
-                <div className="grid grid-cols-12">
-                    <div className="col col-span-6">
+                    <div className="col flex col-span-6">
                         <TextBlock title={"Protesi su attacchi"} text={
                             "Grazie alla connessione cono Morse, i monconi a\n" +
                             "testa sferica Leone risultano privi di fori e incavi,\n" +
@@ -214,16 +216,45 @@ export default function Home() {
                             "alle esigenze cliniche."
                         } />
                         <Image
-                            className="me-5 py-15"
+                            className="me-5 py-10"
                             width={300}
                             src={protesiAttacchi}
                             alt="small"
                         />
                     </div>
                 </div>
+
             </section>
 
-            <section className="workflow-protesico-digitale"></section>
+            <section className="workflow-protesico-digitale mt-15">
+                <h3 className="red font-bold py-4 mt-4 text-3xl">Workflow protesico digitale</h3>
+                <div className="grid grid-cols-12">
+                    <p className="mb-10 col col-span-6">Il sistema implantare Leone si integra perfettamente nei workflow digitali, offrendo una gestione protesica
+                        fluida e completa, dalla corona singola fino alle riabilitazioni su arcata completa. Grazie a componenti dedicati
+                        e alla piena compatibilità con i flussi CAD-CAM, è possibile garantire precisione, rapidità e personalizzazione
+                        in ogni fase del trattamento, ottimizzando tempi clinici e risultati estetico-funzionali.</p>
+                </div>
+                <div className="grid gap-10 grid-cols-12">
+                    <div className="col col-span-4">
+                        <Image src={workflowOne} alt={workflowOne.toString()} />
+                    </div>
+                    <div className="col col-span-4">
+                        <Image src={workflowTwo} alt={workflowOne.toString()} />
+                    </div>
+                    <div className="col col-span-4">
+                        <Image src={workflowThree} alt={workflowOne.toString()} />
+                    </div>
+                    <div className="col col-span-4">
+                        <Image src={workflowFour} alt={workflowOne.toString()} />
+                    </div>
+                    <div className="col col-span-4">
+                        <Image src={workflowFive} alt={workflowOne.toString()} />
+                    </div>
+                    <div className="col col-span-4">
+                        <Image src={workflowSix} alt={workflowOne.toString()} />
+                    </div>
+                </div>
+            </section>
             </div>
     );
 }
