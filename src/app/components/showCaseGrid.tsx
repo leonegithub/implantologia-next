@@ -10,10 +10,11 @@ export type ShowCaseProps = {
 
 type ShowCaseGridProps = {
     showCaseProducts: ShowCaseProps[];
-    title?: string; // titolo opzionale
+    title?: string;
+    link?: string;
 };
 
-export default function ShowCaseGrid({ showCaseProducts, title }: ShowCaseGridProps) {
+export default function ShowCaseGrid({ showCaseProducts, title, link }: ShowCaseGridProps) {
     return (
         <div className="mt-28">
             {title && (
@@ -25,7 +26,7 @@ export default function ShowCaseGrid({ showCaseProducts, title }: ShowCaseGridPr
                     <ShowCaseProduct key={i} {...p} />
                 ))}
                 <div className="bg-red underline flex aspect-square text-white items-center justify-center text-2xl font-bold">
-                    <Link href={"/ciao"}>Scopri di più</Link>
+                    <Link target={"_blank"} href={link}>Scopri di più</Link>
                 </div>
             </div>
         </div>

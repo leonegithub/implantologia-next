@@ -14,9 +14,15 @@ import caso1 from '@/../public/Caso_1-Ricci.png'
 import caso2 from '@/../public/Caso_2-Azzola.png'
 import caso3 from '@/../public/Caso_3-Belcastro.png'
 import caso4 from '@/../public/Caso_4-Guerra.png'
+import exaConnect from '@/../public/exa-connect.png'
+import fissaRimovibile from '@/../public/fissa-rimovibile.png'
+import ponte from '@/../public/ponte.png'
+import protesiAttacchi from '@/../public/protesi-attacchi.png'
+import protesiCementata from '@/../public/protesi-cementata.png'
 import ProductGrid, { Product } from "@/app/components/productGrid";
 import ShowCaseGrid, {ShowCaseProps} from "@/app/components/showCaseGrid";
 import PicCarousel from "@/app/components/picCarousel";
+import TextBlock from "@/app/components/textBlock";
 
 export default function Home() {
     const images = [caso1, caso2, caso3, caso4];
@@ -122,15 +128,102 @@ export default function Home() {
             <div className="flex">
             <ProductGrid products={products} />
             </div>
-
                 <div style={{gap: "250px"}} className="grid md:grid-cols-2">
-                <ShowCaseGrid title="Progettato per ottime soluzioni cliniche" showCaseProducts={showcaseOne} />
-                    <ShowCaseGrid title="I vantaggi della connessione cono-morse autobloccante " showCaseProducts={showcaseTwo} />
+                <ShowCaseGrid link={"/soluzioni-cliniche"} title="Progettato per ottime soluzioni cliniche" showCaseProducts={showcaseOne} />
+                    <ShowCaseGrid link={"/cono-morse-autobloccante"} title="I vantaggi della connessione cono-morse autobloccante " showCaseProducts={showcaseTwo} />
                 </div>
             <div className="carosello pt-20 mt-10">
                 <h3 className="font-bold red text-4xl my-5">Casi clinici</h3>
                 <PicCarousel images={images} />
             </div>
+            <section className="versatilita-protesica mt-20">
+                <h2 className="font-bold red text-4xl">Massima Versatilità Protesica</h2>
+                <div className="grid grid-cols-12">
+                    <div className="col col-span-6">
+                        <TextBlock title={"Protesi cementata"} text={"I monconi XCN® per protesi cementata, privi di\n" +
+                            "canale vite, sono completamente personalizzabili,\n" +
+                            "facili da preparare, più estetici e resistenti.\n" +
+                            "La gamma include soluzioni compatibili con flussi\n" +
+                            "analogici e digitali."} />
+                        <Image
+                            className="me-5 py-15"
+                            width={300}
+                            src={protesiCementata}
+                            alt="small"
+                        />
+                    </div>
+                    <div className="col col-span-6">
+                        <TextBlock title={"Protesi avvitata per elementi\n" +
+                            "singoli con ExaConnect®"} text={"Grazie alla possibilità di gestire angolazioni fino a\n" +
+                            "25° e altezze transmucose fino a 5 mm, il connettore\n" +
+                            "ExaConnect® consente un flusso di lavoro\n" +
+                            "semplificato, portando la connessione protesica\n" +
+                            "a livello dei tessuti gengivali. In abbinamento al\n" +
+                            "Ti-Base dedicato, è possibile ottenere una gamma\n" +
+                            "di monconi con angolazioni e altezze transmucose\n" +
+                            "variabili, ideali per approcci One Abutment–One\n" +
+                            "Time."} />
+                        <Image
+                            className="me-5 p-5"
+                            width={300}
+                            src={exaConnect}
+                            alt="small"
+                        />
+                    </div>
+                </div>
+                <div className="grid grid-cols-12">
+                    <div className="col col-span-6">
+                        <TextBlock title={"Protesi avvitata per ponti\n" +
+                            "e arcate complete"} text={"L’assenza di una vite di connessione tra fixture e moncone rende i MUA Leone estremamente efficienti, poiché richiedono la gestione di una sola vite, quella protesica. Questo semplifica notevolmente le fasi cliniche. I monconi MUA Leone offrono la gamma più ampia sul mercato, con angolazioni fino a 35° e altezze transmucose fino a 7 mm. Sono inoltre disponibili accessori dedicati alle diverse tecniche di ancoraggio protesico, come interfacce CAD-CAM e cilindri da incollaggio.\n"} />
+                        <Image
+                            className="me-5 py-15"
+                            width={300}
+                            src={ponte}
+                            alt="small"
+                        />
+                    </div>
+                    <div className="col col-span-6">
+                        <TextBlock title={"Protesi conometrica fissa\n" +
+                            "e rimovibile"} text={"Con un semi-angolo di 5°, i monconi conometrici\n" +
+                            "assicurano il fissaggio della struttura protesica\n" +
+                            "mediante cappette preformate in PEEK, sfruttando\n" +
+                            "la frizione conometrica. Questa soluzione, priva\n" +
+                            "di viti e cementi, garantisce elevata stabilità e un\n" +
+                            "sigillo protesico efficace, pur consentendo una\n" +
+                            "facile rimozione per controlli e igiene orale. Sono\n" +
+                            "disponibili quattro tipologie di cappette con diverse\n" +
+                            "forze di ritenzione, adatte a tutte le configurazioni\n" +
+                            "protesiche."} />
+                        <Image
+                            className="me-5 p-5"
+                            width={300}
+                            src={fissaRimovibile}
+                            alt="small"
+                        />
+                    </div>
+                </div>
+                <div className="grid grid-cols-12">
+                    <div className="col col-span-6">
+                        <TextBlock title={"Protesi su attacchi"} text={
+                            "Grazie alla connessione cono Morse, i monconi a\n" +
+                            "testa sferica Leone risultano privi di fori e incavi,\n" +
+                            "facilitando la gestione quotidiana dell’igiene orale.\n" +
+                            "Disponibili sia in versione dritta che angolata a 15°,\n" +
+                            "con tre diverse altezze transmucose, offrono la\n" +
+                            "possibilità di scelta tra varie tipologie di cuffie in base\n" +
+                            "alle esigenze cliniche."
+                        } />
+                        <Image
+                            className="me-5 py-15"
+                            width={300}
+                            src={protesiAttacchi}
+                            alt="small"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section className="workflow-protesico-digitale"></section>
             </div>
     );
 }
