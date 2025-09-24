@@ -2,7 +2,7 @@
 
 import Image, { StaticImageData } from "next/image";
 import { Carousel } from 'flowbite-react';
-import {act, useState} from "react";
+import { useState} from "react";
 
 const clinicalCases = [
     {
