@@ -24,21 +24,29 @@ export default function ProtocolloSemplificatoDue() {
                     </p>
                 </div>
 
-                <div className="flex gap-10">
+                <div className="md:flex gap-10">
 
                 <div className="image-container flex">
-                    <Image
-                        src={OTwo}
-                        alt="otwo"
-                        width={400}
-                        height={400}
-                    />
-                    <Image
-                        src={OThree}
-                        alt="othree"
-                        width={400}
-                        height={400}
-                    />
+                    <div>
+                        <div className="surtext mt-5 font-bold red text-xl">Fresa di forma Ø 3,2</div>
+                        <div className="invisible">Fresa di forma Ø 3,2</div>
+                        <Image
+                            src={OTwo}
+                            alt="otwo"
+                            width={400}
+                            height={400}
+                        />
+                    </div>
+                    <div>
+                        <div className="surtext mt-5 font-bold red text-xl">Fresa di forma Ø 3,5</div>
+                        <div className="red text-xl">per osso denso</div>
+                        <Image
+                            src={OThree}
+                            alt="othree"
+                            width={400}
+                            height={400}
+                        />
+                    </div>
                 </div>
                 <div className="image-container flex flex-col">
                     <Image
