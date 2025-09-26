@@ -1,7 +1,5 @@
 import logo from '@/../public/logo-rosso.png'
 import Image from "next/image";
-import logoIso from '@/../public/logo-iso.png'
-import Link from "next/link";
 
 export default function Header() {
     return (
@@ -9,7 +7,7 @@ export default function Header() {
             <header>
                 <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-800">
                     <div className="flex flex-wrap justify-between items-center">
-                        <a href="https://leone.it/" target="_blank">
+                        <a href="https://implantologia.leone.it/" target="_blank">
                             <Image
                             width={150}
                             src={logo}

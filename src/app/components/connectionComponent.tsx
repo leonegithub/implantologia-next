@@ -14,7 +14,7 @@ export default function ConnectionComponent({ text, pic }: ConnectionComponentPr
                 width={400}
                 className="block"
             />
-            <p className="mt-5 text-xl font-bold">{text}</p>
+            <p className="mt-5 text-xl text-gray-600">{text}</p>
         </div>
     );
 }

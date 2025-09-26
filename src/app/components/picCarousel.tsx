@@ -39,19 +39,38 @@ export default function PicCarousel({ images }: { images: StaticImageData[] }) {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-        <div style={{ height: "600px", width: "1000px" }} className="h-96 sm:h-96 xl:h-80 2xl:h-96 flex flex-col">
-            <Carousel onSlideChange={setActiveIndex}>
-                {images.map((image, idx) => (
-                    <div key={idx} className="flex h-full dark:text-whitel">
-                        <Image src={image} alt={image.toString()} />
-                    </div>
-                ))}
-            </Carousel>
+<>
+            <div className="relative w-full h-96 max-w-3xl">
+                <Carousel
+                    leftControl={
+                        <svg className="w-6 h-6 bg-red-500 text-white rounded" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" strokeWidth="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                    }
+                    rightControl={
+                        <svg className="w-6 h-6 bg-red-500 text-white rounded" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" strokeWidth="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                    }
+                    onSlideChange={setActiveIndex}>
+                    {images.map((image, idx) => (
+                        <div key={idx} className="grid place-items-center h-96 overflow-hidden rounded-lg">
+                            <Image
+                                src={image}
+                                alt={image.toString()}
+                                className="w-full h-auto object-contain"
+                            />
+                        </div>
+                    ))}
+                </Carousel>
+            </div>
             <h3 className="red text-3xl mt-5">{clinicalCases[activeIndex].title}</h3>
             <p className="mt-4 text-xl font-bold text-gray-500">
                 {clinicalCases[activeIndex].doctor}
             </p>
             <p className="mt-2">{clinicalCases[activeIndex].text}</p>
-        </div>
+
+</>
+
     );
 }
