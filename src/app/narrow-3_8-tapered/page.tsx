@@ -1,11 +1,16 @@
 import OneForAll from "@/app/components/oneForAll";
 import ProtocolloSemplificatoDue from "@/app/components/protocolloSemplificatoDue";
+import Tabella38 from '@/../public/3.8mm-table.png'
+import Image from "next/image";
 
 export default function ThreeEight() {
     return (
         <>
-            <div className="margin">
+            <div className="mb-10">
                 <OneForAll />
+            </div>
+            <div className="container margin mx-auto px-4">
+                <Image className="lg:w-1/2" src={Tabella38} alt={"tabella-29"} />
             </div>
             <div className="margin">
                 <ProtocolloSemplificatoDue />

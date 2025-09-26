@@ -29,7 +29,6 @@ import workflowThree from '@/../public/workflow3.png'
 import workflowFour from '@/../public/workflow4.png'
 import workflowFive from '@/../public/workflow5.png'
 import workflowSix from '@/../public/workflow6.png'
-import Link from "next/link";
 
 export default function Home() {
     const images = [caso1, caso2, caso3, caso4];
@@ -146,6 +145,13 @@ export default function Home() {
             <section className="versatilita-protesica mt-20">
                 <h2 className="font-bold red text-4xl">Massima Versatilità Protesica</h2>
                 <div className="gap-10 grid grid-cols-1 lg:grid-cols-12">
+                    <div className="col-span-6 flex items-center">
+                        <div className="red w-2/3 h-3/4 text-2xl">
+                            Innovativi componenti protesici, per un’ampia gamma
+                            di soluzioni unica sul mercato
+                        </div>
+
+                    </div>
                     <div className="flex col-span-6">
                         <TextBlock title={"Protesi cementata"} text={"I monconi XCN® per protesi cementata, privi di\n" +
                             "canale vite, sono completamente personalizzabili,\n" +
@@ -225,12 +231,7 @@ export default function Home() {
                             alt="small"
                         />
                     </div>
-                    <div className="col-span-3 bg-red flex items-center justify-center">
-                        <div className="bg-red p-6 underline text-white text-2xl font-bold">
-                            <Link target={"_blank"} href={"link"}>Scopri di più</Link>
-                        </div>
 
-                    </div>
                 </div>
             </section>
             <section className="workflow-protesico-digitale mt-15">
@@ -241,24 +242,24 @@ export default function Home() {
                         e alla piena compatibilità con i flussi CAD-CAM, è possibile garantire precisione, rapidità e personalizzazione
                         in ogni fase del trattamento, ottimizzando tempi clinici e risultati estetico-funzionali.</p>
                 </div>
-                <div className="grid gap-10 grid-cols-12">
-                    <div className="col col-span-4">
-                        <Image src={workflowOne} alt={workflowOne.toString()} />
+                <div className="grid gap-10 grid-cols-6 w-2/3 ">
+                    <div className="col col-span-2">
+                        <Image width={300} src={workflowOne} alt={workflowOne.toString()} />
                     </div>
-                    <div className="col col-span-4">
-                        <Image src={workflowTwo} alt={workflowOne.toString()} />
+                    <div className="col col-span-2">
+                        <Image width={300} src={workflowTwo} alt={workflowOne.toString()} />
                     </div>
-                    <div className="col col-span-4">
-                        <Image src={workflowThree} alt={workflowOne.toString()} />
+                    <div className="col col-span-2">
+                        <Image width={300} src={workflowThree} alt={workflowOne.toString()} />
                     </div>
-                    <div className="col col-span-4">
-                        <Image src={workflowFour} alt={workflowOne.toString()} />
+                    <div className="col col-span-2">
+                        <Image width={300} src={workflowFour} alt={workflowOne.toString()} />
                     </div>
-                    <div className="col col-span-4">
-                        <Image src={workflowFive} alt={workflowOne.toString()} />
+                    <div className="col col-span-2">
+                        <Image width={300} src={workflowFive} alt={workflowOne.toString()} />
                     </div>
-                    <div className="col col-span-4">
-                        <Image src={workflowSix} alt={workflowOne.toString()} />
+                    <div className="col col-span-2">
+                        <Image width={300} src={workflowSix} alt={workflowOne.toString()} />
                     </div>
 
                 </div>
