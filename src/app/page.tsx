@@ -209,7 +209,7 @@ export default function Home() {
                             "facile rimozione per controlli e igiene orale. Sono\n" +
                             "disponibili quattro tipologie di cappette con diverse\n" +
                             "forze di ritenzione, adatte a tutte le configurazioni\n" +
-                            "protesiche"} />
+                            "protesiche."} />
                         <Image
                             className="py-15"
                             width={300}
