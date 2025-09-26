@@ -171,7 +171,7 @@ export default function Home() {
                     <div className="md:flex col-span-6">
                         <TextBlock title={"Protesi avvitata per elementi\n" +
                             "singoli con ExaConnect®"} text={"Grazie alla possibilità di gestire angolazioni fino a\n" +
-                            "25° e altezze transmucose fino a 5 mm, il connettore\n" +
+                            "25° e altezze transmucose fino a 6 mm,  il connettore\n" +
                             "ExaConnect® consente un flusso di lavoro\n" +
                             "semplificato, portando la connessione protesica\n" +
                             "a livello dei tessuti gengivali. In abbinamento al\n" +
