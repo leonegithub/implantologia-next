@@ -12,7 +12,7 @@ export default function ConnectionComponent({ text, pic }: ConnectionComponentPr
                 src={pic}
                 alt="picture"
                 width={400}
-                className="block" // ✅ niente spazio extra a destra
+                className="block"
             />
             <p className="mt-5 text-xl font-bold">{text}</p>
         </div>
