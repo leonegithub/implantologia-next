@@ -35,7 +35,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <h2 className="mb-6 text-sm font-semibold text-red-600 uppercase">QUALITA'</h2>
+                        <h2 className="mb-6 text-sm font-semibold text-red-600 uppercase">QUALIT&Agrave;</h2>
                         <ul className="text-red-600 font-medium">
                             <li className="mb-4">
                                 <a href="#" className="hover:underline hover:text-red-700">Sistema di qualità</a>
