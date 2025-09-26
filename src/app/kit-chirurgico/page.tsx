@@ -15,7 +15,7 @@ export default function KitChirurgico() {
                 <li>fabbricato in materiale plastico PPSU</li>
                 <li>completamente autoclavabile</li>
             </ul>
-            <div className="kit-image my-5 w-1/2">
+            <div className="kit-image my-5 w-full">
                 <Image src={Kit} alt={Kit.toString()}
                 />
             </div>
