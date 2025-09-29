@@ -76,7 +76,7 @@ export default function PicCarousel({ images }: { images: StaticImageData[] }) {
                 rel="noopener noreferrer"
                 className="inline-block mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
             >
-                Vai all'articolo
+                Vai all&#39;articolo
             </Link>
         </>
     );
