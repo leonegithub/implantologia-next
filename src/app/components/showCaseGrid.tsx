@@ -26,7 +26,7 @@ export default function ShowCaseGrid({ showCaseProducts, title, link }: ShowCase
                     <ShowCaseProduct key={i} {...p} />
                 ))}
                 <div className="bg-red underline flex aspect-square text-white items-center justify-center text-2xl font-bold">
-                    <Link target={"_blank"} href={link}>Scopri di più</Link>
+                    <Link href={link} target="_self">Scopri di più</Link>
                 </div>
             </div>
         </div>

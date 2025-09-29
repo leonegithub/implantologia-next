@@ -3,43 +3,42 @@
 import Image, { StaticImageData } from "next/image";
 import { Carousel } from 'flowbite-react';
 import { useState} from "react";
+import Link from "next/link";
 
 const clinicalCases = [
     {
-        title: "Ripristino immediato di creste interforaminali atrofiche con\n" +
-            "impianti XCN® Narrow 2.9 Tapered",
+        title: "Ripristino immediato di creste interforaminali atrofiche con\nimpianti XCN® Narrow 2.9 Tapered",
         doctor: "Dott. Andrea Ricci",
-        text: "Posizionamento di tre impianti Narrow 2.9 Tapered con chirurgia guidata flapless e carico immediato con protesi provvisoria in\n" +
-            "PMMA avvitata. Successiva impronta ottica sui MUA per progettazione CAD-CAM della protesi definitiva avvitata in zirconia."
+        text: "Posizionamento di tre impianti Narrow 2.9 Tapered con chirurgia guidata flapless e carico immediato con protesi provvisoria in\nPMMA avvitata. Successiva impronta ottica sui MUA per progettazione CAD-CAM della protesi definitiva avvitata in zirconia.",
+        link: "https://leone.it/servizi/download/XCNNews-39-Ricci-Pisa.pdf"
     },
     {
-        title: "Riabilitazione di mascellare atrofico\n" +
-            "con impianti XCN® Narrow 2.9 Tapered",
+        title: "Riabilitazione di mascellare atrofico con impianti XCN® Narrow 2.9 Tapered",
         doctor: "Dott. Francesco Azzola",
-        text: "Posizionamento di quattro impianti Narrow 2.9 Tapered e contestuale rigenerazione ossea guidata.\n"+
-            "Dopo la guarigione sommersa, protesizzazione con protesi rimovibile ritenuta da una barra avvitata ai monconi MUA."
+        text: "Posizionamento di quattro impianti Narrow 2.9 Tapered e contestuale rigenerazione ossea guidata.\nDopo la guarigione sommersa, protesizzazione con protesi rimovibile ritenuta da una barra avvitata ai monconi MUA.",
+        link: "https://leone.it/servizi/download/XCNNews-35-Azzola.pdf"
     },
     {
-        title: "Sostituzione immediata di un incisivo centrale superiore\n" +
-            "con impianto XCN® 3.8 Tapered",
+        title: "Sostituzione immediata di un incisivo centrale superiore con impianto XCN® 3.8 Tapered",
         doctor: "Dott. Salvatore Belcastro, Dott. Alessio Natali",
-        text: "Posizionamento post-estrattivo immediato con approccio flapless di un impianto 3.8 Tapered e contestuale rigenerazione\n" +
-            "ossea guidata. Successiva procedura protesica full digital con moncone Ti-Base customizzato e corona in zirconia."
+        text: "Posizionamento post-estrattivo immediato con approccio flapless di un impianto 3.8 Tapered e contestuale rigenerazione\nossea guidata. Successiva procedura protesica full digital con moncone Ti-Base customizzato e corona in zirconia.",
+        link: "https://leone.it/servizi/download/XCNNews-40-Belcastro-Natali.pdf"
     },
     {
-        title: "Sostituzione immediata di due incisivi laterali superiori decidui con\n" +
-            "impianti XCN® 3.8 Tapered",
+        title: "Sostituzione immediata di due incisivi laterali superiori decidui con impianti XCN® 3.8 Tapered",
         doctor: "Dott. Domenico Guerra, Dott. Giovanni Guerra",
-        text: "Posizionamento post-estrattivo immediato di due impianti 3.8 Tapered e provvisori immediati con monconi temporanei.\n" +
-            "Dopo trattamento ortodontico, protesizzazione definitiva‚ con corone in zirconia cementate extraoralmente."
+        text: "Posizionamento post-estrattivo immediato di due impianti 3.8 Tapered e provvisori immediati con monconi temporanei.\nDopo trattamento ortodontico, protesizzazione definitiva con corone in zirconia cementate extraoralmente.",
+        link: "https://leone.it/servizi/download/XCNNews-40-Guerra-Guerra.pdf"
     }
-    ]
+];
+
+
 
 export default function PicCarousel({ images }: { images: StaticImageData[] }) {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-<>
+        <>
             <div className="relative w-full h-96 max-w-3xl">
                 <Carousel
                     leftControl={
@@ -64,13 +63,21 @@ export default function PicCarousel({ images }: { images: StaticImageData[] }) {
                     ))}
                 </Carousel>
             </div>
+
             <h3 className="red text-3xl mt-5">{clinicalCases[activeIndex].title}</h3>
             <p className="mt-4 text-xl font-bold text-gray-500">
                 {clinicalCases[activeIndex].doctor}
             </p>
             <p className="mt-2">{clinicalCases[activeIndex].text}</p>
 
-</>
-
+            <Link
+                href={clinicalCases[activeIndex].link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
+            >
+                Vai all'articolo
+            </Link>
+        </>
     );
 }

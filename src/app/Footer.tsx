@@ -7,19 +7,19 @@ export default function Footer() {
                         <h2 className="mb-6 text-sm font-semibold text-red-600 uppercase">SERVIZI</h2>
                         <ul className="text-red-600 font-medium">
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Downloads</a>
+                                <a href="https://leone.it/servizi/download.php" className="hover:underline hover:text-red-700">Downloads</a>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Newslist</a>
+                                <a href="https://leone.it/servizi/newsletter.php" className="hover:underline hover:text-red-700">Newslist</a>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Assistenza clienti</a>
+                                <a href="https://leone.it/servizi/assistenza-clienti.php" className="hover:underline hover:text-red-700">Assistenza clienti</a>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Area riservata</a>
+                                <a href="https://leone.it/servizi/area-riservata-login.php" className="hover:underline hover:text-red-700">Area riservata</a>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Whistleblowing</a>
+                                <a href="https://leone.it/azienda/whistleblowing.php" className="hover:underline hover:text-red-700">Whistleblowing</a>
                             </li>
                         </ul>
                     </div>
@@ -27,10 +27,10 @@ export default function Footer() {
                         <h2 className="mb-6 text-sm font-semibold text-red-600 uppercase">PUBBLICAZIONI SCIENTIFICHE</h2>
                         <ul className="text-red-600 font-medium">
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Ortodonzia</a>
+                                <a href="https://leone.it/servizi/pubblicazioni-scientifiche-ortodonzia.php" className="hover:underline hover:text-red-700">Ortodonzia</a>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Implantologia</a>
+                                <a href="https://leone.it/servizi/pubblicazioni-scientifiche-implantologia.php" className="hover:underline hover:text-red-700">Implantologia</a>
                             </li>
                         </ul>
                     </div>
@@ -38,13 +38,13 @@ export default function Footer() {
                         <h2 className="mb-6 text-sm font-semibold text-red-600 uppercase">QUALIT&Agrave;</h2>
                         <ul className="text-red-600 font-medium">
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Sistema di qualità</a>
+                                <a href="https://leone.it/servizi/qualita/index.php" className="hover:underline hover:text-red-700">Sistema di qualità</a>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Schede di sicurezza</a>
+                                <a href="https://leone.it/servizi/qualita/schede-sicurezza.php" className="hover:underline hover:text-red-700">Schede di sicurezza</a>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Istruzioni</a>
+                                <a href="https://leone.it/servizi/qualita/istruzioni.php" className="hover:underline hover:text-red-700">Istruzioni</a>
                             </li>
                         </ul>
                     </div>
@@ -52,10 +52,10 @@ export default function Footer() {
                         <h2 className="mb-6 text-sm font-semibold text-red-600 uppercase">Distributori</h2>
                         <ul className="text-red-600 font-medium">
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Ortodonzia</a>
+                                <a href="https://leone.it/distributori/italia-ortodonzia.php" className="hover:underline hover:text-red-700">Ortodonzia</a>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline hover:text-red-700">Implantologia</a>
+                                <a href="https://leone.it/distributori/italia-implantologia.php" className="hover:underline hover:text-red-700">Implantologia</a>
                             </li>
                         </ul>
                     </div>
