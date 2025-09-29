@@ -14,6 +14,10 @@ export default function KitChirurgico() {
             <ul className="mt-10 list-inside list-disc">
                 <li>fabbricato in materiale plastico PPSU</li>
                 <li>completamente autoclavabile</li>
+                <li>dimensioni ridottissime</li>
+                <li>vassoio interno con strumenti</li>
+                <li>misuretore di lunghezza frese DLC</li>
+
             </ul>
             <div className="kit-image my-5 w-full">
                 <Image src={Kit} alt={Kit.toString()}
