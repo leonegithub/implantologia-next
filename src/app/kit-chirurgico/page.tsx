@@ -17,7 +17,6 @@ export default function KitChirurgico() {
                 <li>dimensioni ridottissime</li>
                 <li>vassoio interno con strumenti</li>
                 <li>misuratore di lunghezza frese DLC</li>
-
             </ul>
             <div className="kit-image my-5 w-full">
                 <Image src={Kit} alt={Kit.toString()}
