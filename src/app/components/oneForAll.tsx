@@ -11,7 +11,7 @@ export default function OneForAll() {
                         <div>One for all</div>
                     </h1>
                 </div>
-                <div className="text-container flex flex-col md:flex-row">
+                <div className="text-container flex flex-col md:flex-row gap-20">
                     <div className="left w-full md:w-1/2">
                         <div className="info-block grid grid-cols-1 md:grid-cols-12">
                             <div className="col-span-1 md:col-span-12">

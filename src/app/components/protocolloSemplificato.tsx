@@ -24,7 +24,7 @@ export default function ProtocolloSemplificato() {
                         l’individualizzazione della procedura chirurgica può consentire anche il carico immediato.
                     </p>
                 </div>
-                <div className="grid grid-cols-12 mt-4">
+                <div className="grid grid-cols-12 mt-4 gap-20">
                     <div className="col col-span-4">
                         <TextBlock title={"Osso media densità (D2/D3)"} text={"In caso di osso di media densità è indicato, dopo la\n" +
                             "fresa pilota, utilizzare la fresa elicoidale Ø 2.8 fino\n" +
