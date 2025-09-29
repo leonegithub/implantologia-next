@@ -16,7 +16,7 @@ export default function KitChirurgico() {
                 <li>completamente autoclavabile</li>
                 <li>dimensioni ridottissime</li>
                 <li>vassoio interno con strumenti</li>
-                <li>misuretore di lunghezza frese DLC</li>
+                <li>misuratore di lunghezza frese DLC</li>
 
             </ul>
             <div className="kit-image my-5 w-full">
