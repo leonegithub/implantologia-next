@@ -36,17 +36,17 @@ const prestazioni = [
 
 export default function ConoMorseAutobloccante() {
     return (
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 pt-4 sm:pt-8 md:!pt-12 lg:!pt-28">
             <section className="autobloccante">
                 <h2 className="red text-5xl"><span className="font-bold">Impianti XCN®</span>Tapered</h2>
                 <div className="grid grid-cols-12">
-                    <div className="col col-span-7">
+                    <div className="col col-span-12 lg:col-span-7">
                     <h4 className="red text-3xl my-20">I due impianti della linea Tapered hanno in comune una serie
                         di caratteristiche <span className="font-bold">progettate per migliorarne le prestazioni cliniche </span>
                         nelle varie situazioni chirurgiche e protesiche.</h4>
                     </div>
                 </div>
-                <div className="grid gap-10 md:gap-20 grid-cols-1 md:grid-cols-2">
+                <div className="grid gap-28  grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
                     {prestazioni.map((p, i) => (
                         <div key={i} className="flex flex-col md:flex-row gap-4">
                             <TextBlock title={p.title} text={p.text} />

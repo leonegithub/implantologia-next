@@ -256,7 +256,7 @@ export default function Home() {
                         e alla piena compatibilità con i flussi CAD-CAM, è possibile garantire precisione, rapidità e personalizzazione
                         in ogni fase del trattamento, ottimizzando tempi clinici e risultati estetico-funzionali.</p>
                 </div>
-                <div className="grid md:w-1/2 grid-cols-6 gap-10">
+                <div className="grid md:w-1/2 grid-cols-6 gap-2">
                     <div className="col-span-2">
                         <Image className="w-full h-auto" src={workflowOne} alt={workflowOne.toString()} />
                     </div>
