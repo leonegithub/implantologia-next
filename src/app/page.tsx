@@ -103,7 +103,9 @@ export default function Home() {
     ]
 
     return (
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 pt-4 sm:pt-8 md:!pt-12 lg:!pt-28">
+    
+
             <div className="main-text">
                 <div className="grid grid-cols-6 mb-20 items-center">
                     <h3 className="col-span-5 red sm:text-2xl xl:text-3xl">

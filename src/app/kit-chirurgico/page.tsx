@@ -4,7 +4,7 @@ import Kit_mobile from '@/../public/kit-con-scritte_2.png'
 
 export default function KitChirurgico() {
     return (
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 pt-4 sm:pt-8 md:!pt-12 lg:!pt-28">
             <h2 className="red text-6xl mb-10"><span className="font-bold">Kit chirurgico </span><br/> per impianti XCN® Tapered</h2>
             <div className="grid grid-cols-12">
             <p className="col-span-6">Il kit chirurgico contiene tutti gli strumenti necessari per l’inserimento degli impianti XCN® Tapered raccolti

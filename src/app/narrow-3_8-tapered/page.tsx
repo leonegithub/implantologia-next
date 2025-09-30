@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function ThreeEight() {
     return (
         <>
-            <div className="mb-10">
+            <div className="mb-10 px-4 pt-4 sm:pt-8 md:!pt-12 lg:!pt-28">
                 <OneForAll />
             </div>
             <div className="container margin mx-auto px-4">
