@@ -34,30 +34,30 @@ export default function ProtocolloSemplificatoDue() {
         <div className="md:flex gap-10">
           {/* Colonna frese di forma */}
           <div className="image-container flex gap-6">
-            <div>
+            <div className="pt-6">
               <div className="surtext mt-5 font-bold red text-xl">Fresa di forma Ø 3,2</div>
               <div className="invisible">Fresa di forma Ø 3,2</div>
-              <Image src={OTwo} alt="Fresa di forma Ø 3,2" width={400} height={400} />
+              <Image src={OTwo} alt="Fresa di forma Ø 3,2" width={400}  />
             </div>
-            <div>
+            <div className="pt-6">
               <div className="surtext mt-5 font-bold red text-xl">Fresa di forma Ø 3,5</div>
               <div className="red text-xl">per osso denso</div>
-              <Image src={OThree} alt="Fresa di forma Ø 3,5" width={400} height={400} />
+              <Image src={OThree} alt="Fresa di forma Ø 3,5" width={400}  />
             </div>
           </div>
 
           {/* Colonna procedure con bottoni video */}
-            <div className="image-container flex flex-col items-center">
-            <Image src={osso38_d1} alt="Procedura D1/D2" width={400} height={400} />
+            <div className="image-container flex flex-col items-center pt-6">
+            <Image src={osso38_d1} alt="Procedura D1/D2" width={300} />
             <button
                 type="button"
-                className="mt-2 underline red text-xl text-center"
+                className="mt-2 underline red text-xl text-center pt-6"
                 onClick={() => openVideo("https://player.vimeo.com/video/1113517562")}
             >
                 Video procedura D1/D2
             </button>
 
-            <Image className="mt-12" src={osso38_d2} alt="Procedura D3/D4" width={400} height={400} />
+            <Image className="mt-12" src={osso38_d2} alt="Procedura D3/D4" width={300} />
             <button
                 type="button"
                 className="mt-2 underline red text-xl text-center"
