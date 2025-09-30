@@ -47,20 +47,30 @@ export default function MinMax() {
                         </div>
 
                     </div>
-                    <div className="right w-full md:w-1/2 justify-center items-center">
-                        <TextBlock title={"Connessione\n" +
-                            "Morse 2.2\n"} text={"permette l’utilizzo dell’intera" +
-                            "gamma di monconi" +
-                            "a connessione verde del" +
-                            "sistema implantare XCN®"} />
-                        <div className="pt-8">
-                            <Image
-                                width={600}
-                                src={Connessione29}
-                                alt={"connessione-29"}
-                            />
+                        <div className="right w-full md:w-1/2 justify-center items-center">
+                        <TextBlock
+                        title={
+                            <>
+                            Connessione &nbsp;
+                            <br className="sm:hidden" />
+                            <span className="hidden sm:inline">&nbsp;</span>
+                            Morse 2.2
+                            </>
+                        }
+                        text="permette l’utilizzo dell’intera gamma di monconi a connessione verde del sistema implantare XCN®"
+                        />
+
+
+
+
+                            <div className="pt-8">
+                                <Image
+                                    width={600}
+                                    src={Connessione29}
+                                    alt={"connessione-29"}
+                                />
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
