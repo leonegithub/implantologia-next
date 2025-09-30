@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import logo from "@/../public/logo-rosso.png";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,27 +71,28 @@ export default function Header() {
 <div className="mt-3 border-t border-gray-200 dark:border-gray-700 pt-2 lg:hidden">
   <ul className="flex flex-col space-y-1">
     <li>
-      <a href="/" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
+      <Link href="/" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
         Impianti Tapered series
-      </a>
+      </Link>
     </li>
     <li>
-      <a href="narrow-2_9-tapered" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
+      <Link href="/narrow-2_9-tapered" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
         XCN® Narrow 2.9 Tapered
-      </a>
+      </Link>
     </li>
     <li>
-      <a href="narrow-3_8-tapered" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
+      <Link href="/narrow-3_8-tapered" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
         XCN® 3.8 Tapered
-      </a>
+      </Link>
     </li>
     <li>
-      <a href="kit-chirurgico" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
+      <Link href="/kit-chirurgico" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
         Kit chirurgico
-      </a>
+      </Link>
     </li>
   </ul>
 </div>
+
 
 
 
@@ -190,12 +192,21 @@ export default function Header() {
           {/* --- BARRA SECONDARIA: solo desktop --- */}
 <div className="hidden lg:block border-t border-gray-200 dark:border-gray-700">
   <div className="flex items-center space-x-12 py-6">
-    <a href="/" className="text-red-700 hover:text-red-800 font-medium">Impianti Tapered series</a>
-    <a href="narrow-2_9-tapered" className="text-red-700 hover:text-red-800 font-medium">XCN® Narrow 2.9 Tapered</a>
-    <a href="narrow-3_8-tapered" className="text-red-700 hover:text-red-800 font-medium">XCN® 3.8 Tapered</a>
-    <a href="kit-chirurgico" className="text-red-700 hover:text-red-800 font-medium">Kit chirurgico</a>
+    <Link href="/" className="text-red-700 hover:text-red-800 font-medium">
+      Impianti Tapered series
+    </Link>
+    <Link href="/narrow-2_9-tapered" className="text-red-700 hover:text-red-800 font-medium">
+      XCN® Narrow 2.9 Tapered
+    </Link>
+    <Link href="/narrow-3_8-tapered" className="text-red-700 hover:text-red-800 font-medium">
+      XCN® 3.8 Tapered
+    </Link>
+    <Link href="/kit-chirurgico" className="text-red-700 hover:text-red-800 font-medium">
+      Kit chirurgico
+    </Link>
   </div>
 </div>
+
 
 
 
