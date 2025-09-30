@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Kit from '@/../public/kit-con-scritte.png'
+import Kit_mobile from '@/../public/kit-con-scritte_2.png'
 
 export default function KitChirurgico() {
     return (
@@ -18,10 +19,22 @@ export default function KitChirurgico() {
                 <li>vassoio interno con strumenti</li>
                 <li>misuratore di lunghezza frese DLC</li>
             </ul>
+         
+
+
             <div className="kit-image my-5 w-full">
-                <Image src={Kit} alt={Kit.toString()}
-                />
+            {/* Desktop / Tablet */}
+            <div className="hidden md:block">
+                <Image src={Kit} alt="Kit chirurgico" />
             </div>
+
+            {/* Mobile */}
+            <div className="block md:hidden">
+                <Image src={Kit_mobile} alt="Kit chirurgico mobile" />
+            </div>
+            </div>
+
+
             <div>
                 <div className="kit-inside mt-15">
                     <h2 style={{ fontWeight: 'bold', color: '#6b7c7d' }}>Contenuto del kit:</h2>
