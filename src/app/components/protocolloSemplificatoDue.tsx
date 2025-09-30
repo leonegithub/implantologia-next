@@ -19,7 +19,7 @@ export default function ProtocolloSemplificatoDue() {
     <div className="container mx-auto px-4">
       <div className="titles">
         <h3 className="red font-bold text-4xl">Impianti XCN® Narrow 3.8 Tapered</h3>
-        <h2 className="red font-bold text-5xl">Protocollo chirurgico semplificato</h2>
+        <h2 className="red font-bold text-5xl !leading-[48px] mt-8 mb-8">Protocollo chirurgico semplificato</h2>
 
         <div className="grid grid-cols-12">
           <p className="col-span-12 md:col-span-6 my-3">

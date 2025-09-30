@@ -26,7 +26,7 @@ export default function ProtocolloSemplificato() {
     <div className="container mx-auto px-4">
       <div className="titles">
         <h3 className="red font-bold text-4xl">Impianti XCN® Narrow 2.9 Tapered</h3>
-        <h2 className="red font-bold text-5xl">Protocollo chirurgico semplificato</h2>
+        <h2 className="red font-bold text-5xl !leading-[48px] mt-8 mb-8">Protocollo chirurgico semplificato</h2>
         <div className="grid grid-cols-12">
           <p className="col-span-8">
             Il micro e macro-design dell’impianto Narrow 2.9 facilita il raggiungimento di una stabilità primaria
