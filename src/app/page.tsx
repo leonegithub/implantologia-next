@@ -137,7 +137,7 @@ export default function Home() {
                 </h1>
 
 <div className="grid grid-cols-12">
-<h2 className="col-span-12 lg:col-span-7 red sm:text-3xl xl:text-3xl !leading-[35px]">
+<h2 className="col-span-12 lg:col-span-7 red text-2xl sm:text-2xl xl:text-3xl !leading-[32px] sm:!leading-[32px]">
   Il sistema implantare che ridefinisce gli standard di resistenza e affidabilità grazie alla connessione cono Morse autobloccante
 </h2>
 
