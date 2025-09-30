@@ -14,7 +14,7 @@ const clinicalCases = [
     },
     {
         title: "Riabilitazione di mascellare atrofico con impianti XCN® Narrow 2.9 Tapered",
-        doctor: "Dott. Francesco Azzola",
+        doctor: "Dott. Francesco Azzola, Dott. Bruno Francesco Barbaro, Prof. Stefano Corbella",
         text: "Posizionamento di quattro impianti Narrow 2.9 Tapered e contestuale rigenerazione ossea guidata.\nDopo la guarigione sommersa, protesizzazione con protesi rimovibile ritenuta da una barra avvitata ai monconi MUA.",
         link: "https://leone.it/servizi/download/XCNNews-35-Azzola.pdf"
     },
@@ -39,7 +39,7 @@ export default function PicCarousel({ images }: { images: StaticImageData[] }) {
 
     return (
         <>
-            <div className="relative w-full h-96 max-w-3xl">
+<div className="relative w-full h-40 md:h-96 max-w-3xl">
                 <Carousel
                     leftControl={
                         <svg className="w-6 h-6 bg-red-500 text-white rounded" fill="none" viewBox="0 0 6 10">

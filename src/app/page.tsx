@@ -153,16 +153,20 @@ export default function Home() {
             </div>
 
             <section className="versatilita-protesica mt-20">
-                <h2 className="font-bold red text-4xl mb-8">Massima Versatilità Protesica</h2>
+
+                <h3 className="red font-bold py-4 mt-4 text-4xl">Massima Versatilità Protesica</h3>
+
                 <div className="md:grid grid-cols-12 gap-20">
 
-                    <div className="md:flex col-span-6">
+
+                <div className="md:flex col-span-6 items-start gap-6">
                         <TextBlock title={"Protesi cementata"} text={"I monconi XCN® per protesi cementata, privi di\n" +
-                            "canale vite, sono completamente personalizzabili,\n" +
-                            "facili da preparare, più estetici e resistenti.\n" +
-                            "La gamma include soluzioni compatibili con flussi\n" +
-                            "analogici e digitali."} />
-                        <Image
+                        "canale vite, sono completamente personalizzabili,\n" +
+                        "facili da preparare, più estetici e resistenti.\n" +
+                        "La gamma include soluzioni compatibili con flussi\n" +
+                        "analogici e digitali."} />
+
+                            <Image
                             className="py-15"
                             width={300}
                             src={protesiCementata}
@@ -170,7 +174,10 @@ export default function Home() {
                         />
                     </div>
 
-                    <div className="md:flex col-span-6">
+
+
+
+                    <div className="md:flex col-span-6 items-start gap-6">
                         <TextBlock title={"Protesi avvitata per elementi\n" +
                             "singoli con ExaConnect®"} text={"Grazie alla possibilità di gestire angolazioni fino a\n" +
                             "25° e altezze transmucose fino a 6 mm,  il connettore\n" +
@@ -189,7 +196,7 @@ export default function Home() {
                         />
                     </div>
 
-                    <div className="md:flex col-span-6">
+                <div className="md:flex col-span-6 items-start gap-6">
                         <TextBlock title={"Protesi avvitata per ponti\n" +
                             "e arcate complete"} text={"L'assenza di una vite di connessione tra fixture e moncone rende i MUA Leone estremamente efficienti, poiché richiedono la gestione di una sola vite, quella protesica. Questo semplifica notevolmente le fasi cliniche. I monconi MUA Leone offrono la gamma più ampia sul mercato, con angolazioni fino a 35° e altezze transmucose fino a 7 mm. Sono inoltre disponibili accessori dedicati alle diverse tecniche di ancoraggio protesico, come interfacce CAD-CAM e cilindri da incollaggio.\n"} />
                         <Image
@@ -200,7 +207,7 @@ export default function Home() {
                         />
                     </div>
 
-                    <div className="md:flex col-span-6">
+<div className="md:flex col-span-6 items-start gap-6">
                         <TextBlock title={"Protesi conometrica fissa\n" +
                             "e rimovibile"} text={"Con un semi-angolo di 5°, i monconi conometrici\n" +
                             "assicurano il fissaggio della struttura protesica\n" +
