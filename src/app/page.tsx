@@ -109,8 +109,7 @@ export default function Home() {
             <div className="main-text">
                 <div className="grid grid-cols-6 mb-20 items-center">
                     <h3 className="col-span-5 red sm:text-2xl xl:text-3xl">
-                        <span className="font-bold">Impianti Connessione Cono Morse</span> Tapered Series <br/>
-                        <span className="font-bold">XCN® 3.8</span> e <span className="font-bold">XCN® Narrow 2.9</span>
+                        <span className="font-bold">Impianti XCN®</span> Tapered Series <br/>
                     </h3>
                     <Image
                         className="col-span-1 justify-self-end"
@@ -136,7 +135,17 @@ export default function Home() {
                     </div>
                     but strong
                 </h1>
+
+<div className="grid grid-cols-12">
+<h2 className="col-span-12 lg:col-span-7 red sm:text-3xl xl:text-3xl !leading-[35px]">
+  Il sistema implantare che ridefinisce gli standard di resistenza e affidabilità grazie alla connessione cono Morse autobloccante
+</h2>
+
+</div>
+
             </div>
+
+
 
             <div className="pt-10">
                 <ProductGrid products={products} />
@@ -276,6 +285,7 @@ export default function Home() {
                         <Image className="w-full h-auto" src={workflowSix} alt={workflowSix.toString()} />
                     </div>
                 </div>
+                <p className="text-xs leading-tight">Per gentile concessione Dr. Andrea Ricci e Odt. Massimiliano Pisa</p>             
             </section>
         </div>
     );
