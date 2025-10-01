@@ -39,7 +39,7 @@ import respoTitle from '@/../public/Small-but-strong.png'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.tuodominio.it"),
+  metadataBase: new URL("https://implantologia.leone.it"),
   title: {
     default: "Impianti XCN® Tapered Series – Resistenza e Affidabilità | Leone",
     template: "%s | Implantologia Leone"
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     "Leone"
   ],
   applicationName: "Implantologia Leone",
-  authors: [{ name: "Leone", url: "https://www.tuodominio.it" }],
+  authors: [{ name: "Leone", url: "https://implantologia.leone.it" }],
   creator: "Leone",
   publisher: "Leone",
   category: "Salute",
@@ -74,16 +74,16 @@ export const metadata: Metadata = {
     "max-video-preview": -1
   },
   alternates: {
-    canonical: "https://www.tuodominio.it/",
+    canonical: "https://implantologia.leone.it",
     languages: {
-      "it-IT": "https://www.tuodominio.it/"
+      "it-IT": "https://implantologia.leone.it"
     }
   },
   openGraph: {
     type: "website",
     locale: "it_IT",
     siteName: "Implantologia Leone",
-    url: "https://www.tuodominio.it/",
+    url: "https://implantologia.leone.it",
     title: "Impianti XCN® Tapered Series – Resistenza e Affidabilità",
     description:
       "Connessione cono Morse autobloccante, elevata stabilità primaria e massima versatilità protesica. Scopri Narrow 2.9 e 3.8, kit chirurgici e casi clinici.",
