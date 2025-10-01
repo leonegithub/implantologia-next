@@ -245,7 +245,7 @@ export default function Home() {
                 <ShowCaseGrid link={"/cono-morse-autobloccante"} title="I vantaggi della connessione cono-morse autobloccante " showCaseProducts={showcaseTwo} />
             </div>
 
-<div className="carosello w-full lg:!w-1/2 pt-20 mt-10" >
+            <div className="carosello w-full lg:!w-1/2 pt-20 mt-10" >
                 <h3 className="font-bold red text-4xl my-5">Casi clinici</h3>
                 <PicCarousel images={images} />
             </div>
@@ -254,8 +254,16 @@ export default function Home() {
 
                 <h3 className="red font-bold py-4 mt-4 text-4xl">Massima Versatilità Protesica</h3>
 
-                <div className="md:grid grid-cols-12 gap-20">
 
+
+
+
+
+
+
+
+
+                <div className="md:grid grid-cols-12 gap-20">
 
                 <div className="md:flex col-span-6 items-start gap-6">
                         <TextBlock title={"Protesi cementata"} text={"I monconi XCN® per protesi cementata, privi di\n" +
@@ -344,9 +352,24 @@ export default function Home() {
                     </div>
 
                 </div>
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
             </section>
 
-            <section className="workflow-protesico-digitale mt-15">
+            <section className="workflow-protesico-digitale mt-15 w-full lg:!w-1/2 pt-20 mt-10">
                 <h3 className="red font-bold py-4 mt-4 text-3xl">Workflow protesico digitale</h3>
                 <div className="grid grid-cols-1">
                     <p className="mb-10">Il sistema implantare Leone si integra perfettamente nei workflow digitali, offrendo una gestione protesica
@@ -354,7 +377,7 @@ export default function Home() {
                         e alla piena compatibilità con i flussi CAD-CAM, è possibile garantire precisione, rapidità e personalizzazione
                         in ogni fase del trattamento, ottimizzando tempi clinici e risultati estetico-funzionali.</p>
                 </div>
-                <div className="grid md:w-1/2 grid-cols-6 gap-2">
+                <div className="grid md:full grid-cols-6 gap-2">
                     <div className="col-span-2">
                         <Image className="w-full h-auto" src={workflowOne} alt={workflowOne.toString()} />
                     </div>
@@ -374,7 +397,7 @@ export default function Home() {
                         <Image className="w-full h-auto" src={workflowSix} alt={workflowSix.toString()} />
                     </div>
                 </div>
-                <p className="text-xs leading-tight">Per gentile concessione Dr. Andrea Ricci e Odt. Massimiliano Pisa</p>             
+                <p className="!text-sm leading-tight">Per gentile concessione Dr. Andrea Ricci e Odt. Massimiliano Pisa</p>             
             </section>
         </div>
     );
