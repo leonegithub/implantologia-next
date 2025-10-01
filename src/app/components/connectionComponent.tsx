@@ -12,7 +12,7 @@ export default function ConnectionComponent({ text, pic }: ConnectionComponentPr
                 src={pic}
                 alt="picture"
                 width={400}
-                className="block"
+                className="block border border-red-600"
             />
             <p className="mt-5 text-xl text-gray-600">{text}</p>
         </div>

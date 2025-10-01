@@ -16,7 +16,7 @@ export default function MinMax() {
                     <div className="left w-full md:w-1/2">
                         <div className="info-block grid grid-cols-1 md:grid-cols-12">
                             <div className="col-span-1 md:col-span-12">
-                                <TextBlock title={"Small, but strong"} text={"Con un <strong>diametro massimo</strong> di soli 2,9 mm,\n" +
+                                <TextBlock title={"Small, but strong"} text={"Con un <strong>diametro massimo di soli 2,9 mm</strong> ,\n" +
                                     "questo impianto rappresenta la soluzione clinica\n" +
                                     "semplice, sicura ed efficace per <strong>spazi interdentali</strong>\n" +
                                     "<strong>estremamente ridotti</strong> o <strong>creste ossee fortemente</strong>\n" +

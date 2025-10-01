@@ -65,10 +65,10 @@ export default function PicCarousel({ images }: { images: StaticImageData[] }) {
             </div>
 
             <h3 className="red text-3xl mt-5">{clinicalCases[activeIndex].title}</h3>
-            <p className="mt-4 text-xl font-bold text-gray-500">
+            <p className="mt-4 text-3xl font-bold text-gray-500">
                 {clinicalCases[activeIndex].doctor}
             </p>
-            <p className="mt-2">{clinicalCases[activeIndex].text}</p>
+            <p>{clinicalCases[activeIndex].text}</p>
 
             <Link
                 href={clinicalCases[activeIndex].link}

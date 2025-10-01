@@ -70,27 +70,27 @@ export const metadata: Metadata = {
 const prestazioni = [
     {
         title: "Approccio mininvasivo\ne preservazione dell’osso\ncrestale",
-        text: "Grazie alla porzione coronale cilindrica, è\npossibile un approccio mininvasivo che favorisce\nil mantenimento dell’osso crestale.",
+        text: "Grazie alla <strong>porzione coronale cilindrica</strong>, è\npossibile un approccio mininvasivo che favorisce\nil mantenimento dell’osso crestale.",
         img: prestazioni4,
     },
     {
         title: "Elevata stabilità primaria anche in\nosso di bassa qualità",
-        text: "La geometria cilindro-conica favorisce la\ncompattazione dell’osso sotto preparato,\ngarantendo una buona stabilità primaria anche\nin condizioni ossee sfavorevoli.",
+        text: "La<strong> geometria cilindro-conica</strong> favorisce la\ncompattazione dell’osso sotto preparato,\ngarantendo una buona stabilità primaria anche\nin condizioni ossee sfavorevoli.",
         img: prestazioni1,
     },
     {
         title: "Gestione ottimale di\npost-estrattivi e carico immediato",
-        text: "La filettatura con passo fine e altezza crescente\ngenera un torque progressivo, facilitando la gestione\ndei casi post-estrattivi e del carico immediato.",
+        text: "La <strong>filettatura con passo fine e altezza crescente</strong>\ngenera un torque progressivo, facilitando la gestione\ndei casi post-estrattivi e del carico immediato.",
         img: prestazioni2,
     },
     {
         title: "Migliore osteointegrazione",
-        text: "La superficie High Rutile Surface (HRS)\nmicrosabbiata crea un sottile strato di ossido\ndi titanio puro (TiO₂) con rugosità controllata,\nriducendo la tensione superficiale e favorendo\ni processi di osteointegrazione.",
+        text: "La superficie <strong>High Rutile Surface (HRS)\nmicrosabbiata</strong> crea un sottile strato di ossido\ndi titanio puro (TiO₂) con rugosità controllata,\nriducendo la tensione superficiale e favorendo\ni processi di osteointegrazione.",
         img: prestazioni5,
     },
     {
         title: "Soluzione ideale per spazi limitati\ne anatomie complesse",
-        text: "L’apice sottile lo rende particolarmente indicato\nper creste e spazi interdentali ridotti, concavità\nvestibolari e radici convergenti.",
+        text: "L’<strong>apice sottile</strong> lo rende particolarmente indicato\nper creste e spazi interdentali ridotti, concavità\nvestibolari e radici convergenti.",
         img: prestazioni3,
     },
 ];
