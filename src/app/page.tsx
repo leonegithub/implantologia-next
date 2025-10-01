@@ -31,6 +31,95 @@ import workflowFive from '@/../public/workflow5.png'
 import workflowSix from '@/../public/workflow6.png'
 import respoTitle from '@/../public/Small-but-strong.png'
 
+
+
+
+
+// app/page.tsx (estratto)
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.tuodominio.it"),
+  title: {
+    default: "Impianti XCN® Tapered Series – Resistenza e Affidabilità | Leone",
+    template: "%s | Implantologia Leone"
+  },
+  description:
+    "Il sistema implantare XCN® Tapered Series di Leone ridefinisce gli standard di resistenza e affidabilità grazie alla connessione cono Morse autobloccante. Soluzioni per spazi limitati, stabilità primaria elevata e workflow protesici digitali.",
+  keywords: [
+    "implantologia",
+    "impianti dentali",
+    "XCN",
+    "Tapered",
+    "cono Morse",
+    "stabilità primaria",
+    "protesi avvitata",
+    "protesi cementata",
+    "MUA",
+    "ExaConnect",
+    "workflow digitale CAD-CAM",
+    "Leone"
+  ],
+  applicationName: "Implantologia Leone",
+  authors: [{ name: "Leone", url: "https://www.tuodominio.it" }],
+  creator: "Leone",
+  publisher: "Leone",
+  category: "Salute",
+  referrer: "origin-when-cross-origin",
+  robots: {
+    index: true,
+    follow: true,
+    "max-snippet": -1,
+    "max-image-preview": "large",
+    "max-video-preview": -1
+  },
+  alternates: {
+    canonical: "https://www.tuodominio.it/",
+    languages: {
+      "it-IT": "https://www.tuodominio.it/"
+    }
+  },
+  openGraph: {
+    type: "website",
+    locale: "it_IT",
+    siteName: "Implantologia Leone",
+    url: "https://www.tuodominio.it/",
+    title: "Impianti XCN® Tapered Series – Resistenza e Affidabilità",
+    description:
+      "Connessione cono Morse autobloccante, elevata stabilità primaria e massima versatilità protesica. Scopri Narrow 2.9 e 3.8, kit chirurgici e casi clinici.",
+    images: [
+      {
+        url: "/og/og-home.jpg", // 1200x630 consigliato
+        width: 1200,
+        height: 630,
+        alt: "Impianti XCN® Tapered Series – Leone"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Impianti XCN® Tapered Series – Resistenza e Affidabilità | Leone",
+    description:
+      "Connessione cono Morse autobloccante, stabilità primaria elevata e flussi CAD-CAM: scopri la gamma XCN®.",
+    images: ["/og/og-home.jpg"]
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" }
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }]
+  }
+};
+
+
+
+
+
+
+
+
 export default function Home() {
     const images = [caso1, caso2, caso3, caso4];
     const products: Product[] = [
