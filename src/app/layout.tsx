@@ -15,6 +15,27 @@ export default function RootLayout({
   return (
     <html lang="en">
     <head>
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-X7R9L10XEY"
+          strategy="afterInteractive"
+          async
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-X7R9L10XEY', {
+              anonymize_ip: true,
+              send_page_view: true
+            });
+          `}
+        </Script>
+
+
+
+
         <meta charSet="UTF-8"/>
         <meta name="viewport"
               content="width=device-width,
