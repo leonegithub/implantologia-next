@@ -245,7 +245,7 @@ export default function Home() {
                 <ShowCaseGrid link={"/cono-morse-autobloccante"} title="I vantaggi della connessione cono-morse autobloccante " showCaseProducts={showcaseTwo} />
             </div>
 
-            <div className="carosello pt-20 mt-10">
+<div className="carosello w-full lg:!w-1/2 pt-20 mt-10" >
                 <h3 className="font-bold red text-4xl my-5">Casi clinici</h3>
                 <PicCarousel images={images} />
             </div>
