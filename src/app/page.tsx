@@ -89,7 +89,7 @@ export const metadata: Metadata = {
       "Connessione cono Morse autobloccante, elevata stabilità primaria e massima versatilità protesica. Scopri Narrow 2.9 e 3.8, kit chirurgici e casi clinici.",
     images: [
       {
-        url: "/og-home.png", // 👈 basta il path pubblico
+        url: "/og-home.jpg", // 👈 basta il path pubblico
         width: 1200,
         height: 630,
         alt: "Impianti XCN® Tapered Series – Leone"
@@ -101,7 +101,7 @@ export const metadata: Metadata = {
     title: "Impianti XCN® Tapered Series – Resistenza e Affidabilità | Leone",
     description:
       "Connessione cono Morse autobloccante, stabilità primaria elevata e flussi CAD-CAM: scopri la gamma XCN®.",
-    images: ["/og-home.png"] // 👈 anche qui solo path
+    images: ["/og-home.jpg"] // 👈 anche qui solo path
   },
   icons: {
     icon: [
