@@ -2,6 +2,65 @@ import Image from "next/image";
 import Kit from '@/../public/kit-con-scritte.png'
 import Kit_mobile from '@/../public/kit-con-scritte_2.png'
 
+// app/kit-chirurgico/page.tsx
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://implantologia.leone.it"),
+  title: "Kit chirurgico Leone – Strumentario completo per sistema XCN®",
+  description:
+    "Kit chirurgico completo Leone 156-0066-04: strumentario autoclavabile in PPSU, stop di profondità, frese pilota e elicoidali. Progettato per il sistema implantare XCN®.",
+  keywords: [
+    "kit chirurgico Leone",
+    "strumentario XCN",
+    "strumenti implantologia",
+    "kit chirurgico completo",
+    "strumentario chirurgo dentale",
+    "fresatura implantare",
+    "stop profondità",
+    "autoclavabile PPSU"
+  ],
+  applicationName: "Implantologia Leone",
+  authors: [{ name: "Leone", url: "https://implantologia.leone.it" }],
+  creator: "Leone",
+  publisher: "Leone",
+  category: "Salute",
+  alternates: {
+    canonical: "https://implantologia.leone.it/kit-chirurgico",
+    languages: {
+      "it-IT": "https://implantologia.leone.it/kit-chirurgico"
+    }
+  },
+  openGraph: {
+    type: "website",
+    locale: "it_IT",
+    siteName: "Implantologia Leone",
+    url: "https://implantologia.leone.it/kit-chirurgico",
+    title: "Kit chirurgico Leone – Strumentario completo per sistema XCN®",
+    description:
+      "Kit chirurgico completo per impianti XCN®: frese, stop di profondità, supporti silicone, strumentario autoclavabile in PPSU.",
+    images: [
+      {
+        url: "/kit-chirurgico-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Kit chirurgico Leone per sistema XCN"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kit chirurgico Leone – Strumentario completo per sistema XCN®",
+    description:
+      "Kit chirurgico completo per impianti XCN® con frese, stop di profondità e supporti colorati. Scopri lo strumentario Leone.",
+    images: ["/kit-chirurgico-og.png"]
+  }
+};
+
+
+
+
+
 export default function KitChirurgico() {
     return (
         <div className="container mx-auto px-4 pt-4 sm:pt-8 md:!pt-12 lg:!pt-28">
