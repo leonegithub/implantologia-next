@@ -101,7 +101,7 @@ export const metadata: Metadata = {
     title: "Impianti XCN® Tapered Series – Resistenza e Affidabilità | Leone",
     description:
       "Connessione cono Morse autobloccante, stabilità primaria elevata e flussi CAD-CAM: scopri la gamma XCN®.",
-    images: ["/og/og-home.jpg"]
+    images: ["og-home.jpg"]
   },
   icons: {
     icon: [
