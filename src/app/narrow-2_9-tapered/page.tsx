@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       "Protocollo chirurgico avanzato per l’impianto XCN® Narrow 2.9 Tapered: progettato per massimizzare stabilità in vari tipi di osso, anche nelle condizioni anatomiche difficili.",
     images: [
       {
-        url: "/narrow-29.png",
+        url: "/narrow-29.jpg",
         width: 1200,
         height: 630,
         alt: "XCN® Narrow 2.9 Tapered"
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "XCN® Narrow 2.9 Tapered – Protocollo chirurgico semplificato",
     description:
       "Design innovativo e protocollo semplificato per l'impianto Narrow 2.9 – stabilità anche in spazi angusti e osso compromesso.",
-    images: ["/narrow-29.png"]
+    images: ["/narrow-29.jpg"]
   }
 };
 

@@ -44,7 +44,7 @@ export const metadata: Metadata = {
       "Il sistema XCN® Narrow 3.8 Tapered offre diametro compatto, connessione Morse autobloccante e un protocollo semplificato per elevata stabilità anche in spazi anatomici complessi.",
     images: [
       {
-        url: "/narrow-38.png",
+        url: "/narrow-38.jpg",
         width: 1200,
         height: 630,
         alt: "XCN® Narrow 3.8 Tapered – Leone"
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "XCN® Narrow 3.8 Tapered – Protocollo chirurgico semplificato | Leone",
     description:
       "Connessione Morse autobloccante e protocollo semplificato per l’impianto Narrow 3.8 – stabilità anche in spazi limitati.",
-    images: ["/narrow-38.png"]
+    images: ["/narrow-38.jpg"]
   }
 };
 

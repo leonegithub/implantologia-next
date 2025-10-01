@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       "Kit chirurgico completo per impianti XCN®: frese, stop di profondità, supporti silicone, strumentario autoclavabile in PPSU.",
     images: [
       {
-        url: "/kit-chirurgico-og.png",
+        url: "/kit-chirurgico-og.jpg",
         width: 1200,
         height: 630,
         alt: "Kit chirurgico Leone per sistema XCN"
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "Kit chirurgico Leone – Strumentario completo per sistema XCN®",
     description:
       "Kit chirurgico completo per impianti XCN® con frese, stop di profondità e supporti colorati. Scopri lo strumentario Leone.",
-    images: ["/kit-chirurgico-og.png"]
+    images: ["/kit-chirurgico-og.jpg"]
   }
 };
 
