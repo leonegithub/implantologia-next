@@ -29,9 +29,9 @@ export default function MinMax() {
                                 <TextBlock title={"Oltre i limiti anatomici,\n" +
                                     "senza compromessi"} text={"Utilizzato con successo dal 2017 da migliaia di" +
                                     "professionisti, questo impianto si è dimostrato" +
-                                    "<strong>affidabile</strong> non solo per <strong>edentulie singole</strong> in zona" +
-                                    "<strong>anteriore inferiore</strong>, ma anche per <strong>riabilitazioni</strong>" +
-                                    "<strong>multiple e totali su creste severamente</strong>" +
+                                    "<strong>affidabile</strong> non solo per <strong>edentulie singole</strong> in zona " +
+                                    "<strong>anteriore inferiore</strong>, ma anche per <strong>riabilitazioni</strong> " +
+                                    "<strong>multiple e totali su creste severamente</strong> " +
                                     "<strong>riassorbite</strong>."} />
                             </div>
                         </div>
@@ -40,7 +40,7 @@ export default function MinMax() {
                                 <TextBlock title={"Performance meccaniche\n" +
                                     "elevate"} text={"Progettato senza vite di connessione tra impianto" +
                                     "e moncone, offre una stabilità e una <strong>resistenza ai</strong>" +
-                                    "<strong>carichi masticatori superiori rispetto a qualsiasi</strong>" +
+                                    "<strong>carichi masticatori superiori rispetto a qualsiasi</strong> " +
                                     "<strong>altro impianto di piccolo diametro</strong> disponibile sul" +
                                     "mercato*."} />
                             </div>
@@ -57,7 +57,7 @@ export default function MinMax() {
                             Morse 2.2
                             </>
                         }
-                        text="permette l’utilizzo dell’intera gamma di monconi a connessione verde del sistema implantare XCN®"
+                        text="Permette l’utilizzo dell’intera gamma di monconi a connessione verde del sistema implantare XCN®"
                         />
 
 
