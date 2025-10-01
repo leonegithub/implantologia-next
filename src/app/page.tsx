@@ -245,121 +245,218 @@ export default function Home() {
                 <ShowCaseGrid link={"/cono-morse-autobloccante"} title="I vantaggi della connessione cono-morse autobloccante " showCaseProducts={showcaseTwo} />
             </div>
 
-            <div className="carosello w-full lg:!w-1/2 pt-20 mt-10" >
-                <h3 className="font-bold red text-4xl my-5">Casi clinici</h3>
-                <PicCarousel images={images} />
-            </div>
-
-            <section className="versatilita-protesica mt-20">
-
-                <h3 className="red font-bold py-4 mt-4 text-4xl">Massima Versatilità Protesica</h3>
 
 
 
 
+<div className="carosello w-full lg:w-1/2">
+<h3 className="font-bold red text-4xl my-5 pt-24">Casi clinici</h3>
+
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+
+    <div className="bg-gray-100 rounded-lg p-8">
+    <h2 className="red text-3xl !leading-[1.20] !mb-6">Ripristino immediato di creste interforaminali atrofiche con impianti XCN® Narrow 2.9 Tapered</h2>
+    <h3 className="font-bold">Dott. Andrea Ricci</h3>
+    <p>Posizionamento di tre impianti Narrow 2.9 Tapered con chirurgia guidata flapless e carico immediato con protesi provvisoria in\nPMMA avvitata. Successiva impronta ottica sui MUA per progettazione CAD-CAM della protesi definitiva avvitata in zirconia.</p>
+    <a
+        href="https://leone.it/servizi/download/XCNNews-39-Ricci-Pisa.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 active:bg-red-800"
+        aria-label="Scarica il PDF - XCNNews 39 Ricci Pisa"
+      >
+        Consulta il caso
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M3 10a1 1 0 011-1h7.586L9.293 6.707a1 1 0 111.414-1.414l4.999 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L11.586 11H4a1 1 0 01-1-1z"/>
+        </svg>
+      </a>
+    </div>
+
+
+
+    
+    <div className="bg-gray-100 rounded-lg p-8">
+    <h2 className="red text-3xl !leading-[1.20] !mb-6">Riabilitazione di mascellare atrofico con impianti XCN® Narrow 2.9 Tapered</h2>
+    <h3 className="font-bold">Dott. Francesco Azzola, Dott. Bruno Francesco Barbaro, Prof. Stefano Corbella</h3>
+    <p>Posizionamento di quattro impianti Narrow 2.9 Tapered e contestuale rigenerazione ossea guidata.\nDopo la guarigione sommersa, protesizzazione con protesi rimovibile ritenuta da una barra avvitata ai monconi MUA.</p>
+    <a
+        href="https://leone.it/servizi/download/XCNNews-35-Azzola.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 active:bg-red-800"
+        aria-label="Scarica il PDF - XCNNews 39 Ricci Pisa"
+      >
+        Consulta il caso
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M3 10a1 1 0 011-1h7.586L9.293 6.707a1 1 0 111.414-1.414l4.999 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L11.586 11H4a1 1 0 01-1-1z"/>
+        </svg>
+      </a>
+    </div>
+
+
+
+
+
+    <div className="bg-gray-100 rounded-lg p-8">
+    <h2 className="red text-3xl !leading-[1.20] !mb-6">Sostituzione immediata di un incisivo centrale superiore con impianto XCN® 3.8 Tapered</h2>
+    <h3 className="font-bold">Dott. Salvatore Belcastro, Dott. Alessio Natali</h3>
+    <p>Posizionamento post-estrattivo immediato con approccio flapless di un impianto 3.8 Tapered e contestuale rigenerazione\nossea guidata. Successiva procedura protesica full digital con moncone Ti-Base customizzato e corona in zirconia.</p>
+    <a
+        href="https://leone.it/servizi/download/XCNNews-40-Belcastro-Natali.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 active:bg-red-800"
+        aria-label="Scarica il PDF - XCNNews 39 Ricci Pisa"
+      >
+        Consulta il caso
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M3 10a1 1 0 011-1h7.586L9.293 6.707a1 1 0 111.414-1.414l4.999 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L11.586 11H4a1 1 0 01-1-1z"/>
+        </svg>
+      </a>
+    </div>
+
+
+
+
+    <div className="bg-gray-100 rounded-lg p-8">
+    <h2 className="red text-3xl !leading-[1.20] !mb-6">Sostituzione immediata di due incisivi laterali superiori decidui con impianti XCN® 3.8 Tapered</h2>
+    <h3 className="font-bold">Dott. Domenico Guerra, Dott. Giovanni Guerra</h3>
+    <p>Posizionamento post-estrattivo immediato di due impianti 3.8 Tapered e provvisori immediati con monconi temporanei.\nDopo trattamento ortodontico, protesizzazione definitiva con corone in zirconia cementate extraoralmente.</p>
+    <a
+        href="https://leone.it/servizi/download/XCNNews-40-Guerra-Guerra.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 active:bg-red-800"
+        aria-label="Scarica il PDF - XCNNews 39 Ricci Pisa"
+      >
+        Consulta il caso
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M3 10a1 1 0 011-1h7.586L9.293 6.707a1 1 0 111.414-1.414l4.999 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L11.586 11H4a1 1 0 01-1-1z"/>
+        </svg>
+      </a>
+    </div>
+    
+    </div>
+</div>
 
 
 
 
 
 
-                <div className="md:grid grid-cols-12 gap-20">
 
-                <div className="md:flex col-span-6 items-start gap-6">
-                        <TextBlock title={"Protesi cementata"} text={"I monconi XCN® per protesi cementata, privi di\n" +
-                        "canale vite, sono completamente personalizzabili,\n" +
-                        "facili da preparare, più estetici e resistenti.\n" +
-                        "La gamma include soluzioni compatibili con flussi\n" +
-                        "analogici e digitali."} />
 
-                            <Image
-                            className="py-15"
+
+
+
+<div className="carosello w-full lg:w-1/2">
+  <h3 className="font-bold red text-4xl my-5 pt-24">Massima Versatilità Protesica</h3>
+
+  {/* Contenitori: 1 col su mobile, 2 col da sm in su — allineati in alto */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start content-start">
+    
+    {/* CARD */}
+    <div className="rounded-lg pt-4">
+      <div className="w-full font-semibold text-2xl red">Protesi cementata</div>
+
+      {/* Interno: 1 col su mobile+tablet, 2 col da lg — allineati in alto */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start content-start">
+        <div className="rounded pt-3 min-h-[80px]">
+        I monconi XCN® per protesi cementata, privi di canale vite, sono completamente personalizzabili, facili da preparare, più estetici e resistenti. La gamma include soluzioni compatibili con flussi analogici e digitali.</div>
+        <div className="rounded pt-3 min-h-[80px]">
+        
+                <Image
                             width={300}
                             src={protesiCementata}
                             alt="protesi cementata"
                         />
-                    </div>
+
+        </div>
+      </div>
+    </div>
 
 
+    {/* CARD */}
+    <div className="rounded-lg pt-4 pb-4">
+      <div className="w-full font-semibold text-2xl red">Protesi avvitata per elementi singoli con ExaConnect®</div>
 
-
-                    <div className="md:flex col-span-6 items-start gap-6">
-                        <TextBlock title={"Protesi avvitata per elementi\n" +
-                            "singoli con ExaConnect®"} text={"Grazie alla possibilità di gestire angolazioni fino a\n" +
-                            "25° e altezze transmucose fino a 6 mm,  il connettore\n" +
-                            "ExaConnect® consente un flusso di lavoro\n" +
-                            "semplificato, portando la connessione protesica\n" +
-                            "a livello dei tessuti gengivali. In abbinamento al\n" +
-                            "Ti-Base dedicato, è possibile ottenere una gamma\n" +
-                            "di monconi con angolazioni e altezze transmucose\n" +
-                            "variabili, ideali per approcci One Abutment–One\n" +
-                            "Time."} />
-                        <Image
-                            className="py-15"
+      {/* Interno: 1 col su mobile+tablet, 2 col da lg — allineati in alto */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start content-start">
+        <div className="rounded pt-3 min-h-[80px]">
+        Grazie alla possibilità di gestire angolazioni fino a 25° e altezze transmucose fino a 6 mm,  il connettore ExaConnect® consente un flusso di lavoro "semplificato, portando la connessione protesica a livello dei tessuti gengivali. In abbinamento al Ti-Base dedicato, è possibile ottenere una gamma di monconi con angolazioni e altezze transmucose variabili, ideali per approcci One Abutment–One Time.</div>
+        <div className="rounded pt-3 min-h-[80px]">
+        
+                <Image
                             width={300}
                             src={exaConnect}
-                            alt="exa connect"
+                            alt="protesi cementata"
                         />
-                    </div>
 
-                <div className="md:flex col-span-6 items-start gap-6">
-                        <TextBlock title={"Protesi avvitata per ponti\n" +
-                            "e arcate complete"} text={"L'assenza di una vite di connessione tra fixture e moncone rende i MUA Leone estremamente efficienti, poiché richiedono la gestione di una sola vite, quella protesica. Questo semplifica notevolmente le fasi cliniche. I monconi MUA Leone offrono la gamma più ampia sul mercato, con angolazioni fino a 35° e altezze transmucose fino a 7 mm. Sono inoltre disponibili accessori dedicati alle diverse tecniche di ancoraggio protesico, come interfacce CAD-CAM e cilindri da incollaggio.\n"} />
-                        <Image
-                            className="py-15"
+        </div>
+      </div>
+    </div>    {/* CARD */}
+    <div className="rounded-lg pt-4 pb-4">
+      <div className="w-full font-semibold text-2xl red">Protesi avvitata per ponti e arcate complete</div>
+
+      {/* Interno: 1 col su mobile+tablet, 2 col da lg — allineati in alto */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start content-start">
+        <div className="rounded pt-3 min-h-[80px]">
+   L'assenza di una vite di connessione tra fixture e moncone rende i MUA Leone estremamente efficienti, poiché richiedono la gestione di una sola vite, quella protesica. Questo semplifica notevolmente le fasi cliniche. I monconi MUA Leone offrono la gamma più ampia sul mercato, con angolazioni fino a 35° e altezze transmucose fino a 7 mm. Sono inoltre disponibili accessori dedicati alle diverse tecniche di ancoraggio protesico, come interfacce CAD-CAM e cilindri da incollaggio.</div>
+        <div className="rounded pt-3 min-h-[80px]">
+        
+                <Image
                             width={300}
                             src={ponte}
-                            alt="ponte"
+                            alt="protesi cementata"
                         />
-                    </div>
 
-<div className="md:flex col-span-6 items-start gap-6">
-                        <TextBlock title={"Protesi conometrica fissa\n" +
-                            "e rimovibile"} text={"Con un semi-angolo di 5°, i monconi conometrici\n" +
-                            "assicurano il fissaggio della struttura protesica\n" +
-                            "mediante cappette preformate in PEEK, sfruttando\n" +
-                            "la frizione conometrica. Questa soluzione, priva\n" +
-                            "di viti e cementi, garantisce elevata stabilità e un\n" +
-                            "sigillo protesico efficace, pur consentendo una\n" +
-                            "facile rimozione per controlli e igiene orale. Sono\n" +
-                            "disponibili quattro tipologie di cappette con diverse\n" +
-                            "forze di ritenzione, adatte a tutte le configurazioni\n" +
-                            "protesiche."} />
-                        <Image
-                            className="py-15"
+        </div>
+      </div>
+    </div>    {/* CARD */}
+    <div className="rounded-lg pt-4 pb-4">
+      <div className="w-full font-semibold text-2xl red">Protesi conometrica fissa e rimovibile</div>
+
+      {/* Interno: 1 col su mobile+tablet, 2 col da lg — allineati in alto */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start content-start">
+        <div className="rounded pt-3 min-h-[80px]">
+        Con un semi-angolo di 5°, i monconi conometrici assicurano il fissaggio della struttura protesica mediante cappette preformate in PEEK, sfruttando la frizione conometrica. Questa soluzione, priva di viti e cementi, garantisce elevata stabilità e un sigillo protesico efficace, pur consentendo una. facile rimozione per controlli e igiene orale. Sono disponibili quattro tipologie di cappette con diverse forze di ritenzione, adatte a tutte le configurazioni protesiche.</div>
+        <div className="rounded pt-3 min-h-[80px]">
+        
+                <Image
                             width={300}
                             src={fissaRimovibile}
-                            alt="fissa rimovibile"
+                            alt="protesi cementata"
                         />
-                    </div>
 
-                    <div className="md:flex col-span-6 justify-center">
-                        <TextBlock title={"Protesi su attacchi"} text={
-                            "Grazie alla connessione cono Morse, i monconi a\n" +
-                            "testa sferica Leone risultano privi di fori e incavi,\n" +
-                            "facilitando la gestione quotidiana dell'igiene orale.\n" +
-                            "Disponibili sia in versione dritta che angolata a 15°,\n" +
-                            "con tre diverse altezze transmucose, offrono la\n" +
-                            "possibilità di scelta tra varie tipologie di cuffie in base\n" +
-                            "alle esigenze cliniche."
-                        } />
-                        <Image
-                            className="py-15"
+        </div>
+      </div>
+    </div>
+
+    {/* CARD */}
+    <div className="rounded-lg pt-4 pb-4">
+      <div className="w-full font-semibold text-2xl red">Protesi su attacchi</div>
+
+      {/* Interno: 1 col su mobile+tablet, 2 col da lg — allineati in alto */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start content-start">
+        <div className="rounded pt-3 min-h-[80px]">
+        Grazie alla connessione cono Morse, i monconi testa sferica Leone risultano privi di fori e incavi, facilitando la gestione quotidiana dell'igiene orale.
+        Disponibili sia in versione dritta che angolata a 15°, con tre diverse altezze transmucose, offrono la possibilità di scelta tra varie tipologie di cuffie in base alle esigenze cliniche.</div>
+        <div className="rounded pt-3 min-h-[80px]">
+        
+                <Image
                             width={300}
                             src={protesiAttacchi}
-                            alt="protesi attacchi"
+                            alt="protesi cementata"
                         />
-                    </div>
 
-                </div>
-
-
-
+        </div>
+      </div>
+    </div>
 
 
-
-
-                
+  </div>
+</div>
 
 
 
@@ -367,17 +464,23 @@ export default function Home() {
 
 
 
-            </section>
 
-            <section className="workflow-protesico-digitale mt-15 w-full lg:!w-1/2 pt-20 mt-10">
-                <h3 className="red font-bold py-4 mt-4 text-3xl">Workflow protesico digitale</h3>
+
+
+
+
+
+
+            <section className="workflow-protesico-digitale mt-15 w-full pt-20 mt-10">
+                  <h3 className="font-bold red text-4xl my-5 pt-24">Workflow protesico digitale</h3>
+
                 <div className="grid grid-cols-1">
                     <p className="mb-10">Il sistema implantare Leone si integra perfettamente nei workflow digitali, offrendo una gestione protesica
                         fluida e completa, dalla corona singola fino alle riabilitazioni su arcata completa. Grazie a componenti dedicati
                         e alla piena compatibilità con i flussi CAD-CAM, è possibile garantire precisione, rapidità e personalizzazione
                         in ogni fase del trattamento, ottimizzando tempi clinici e risultati estetico-funzionali.</p>
                 </div>
-                <div className="grid md:full grid-cols-6 gap-2">
+                <div className="grid md:full grid-cols-6 gap-10">
                     <div className="col-span-2">
                         <Image className="w-full h-auto" src={workflowOne} alt={workflowOne.toString()} />
                     </div>
@@ -397,7 +500,7 @@ export default function Home() {
                         <Image className="w-full h-auto" src={workflowSix} alt={workflowSix.toString()} />
                     </div>
                 </div>
-                <p className="!text-sm leading-tight">Per gentile concessione Dr. Andrea Ricci e Odt. Massimiliano Pisa</p>             
+                <p className="!text-sm leading-tight mt-8">Per gentile concessione Dr. Andrea Ricci e Odt. Massimiliano Pisa</p>             
             </section>
         </div>
     );
