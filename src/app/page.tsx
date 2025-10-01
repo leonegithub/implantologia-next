@@ -384,7 +384,7 @@ export default function Home() {
       {/* Interno: 1 col su mobile+tablet, 2 col da lg — allineati in alto */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start content-start">
         <div className="rounded pt-3 min-h-[80px]">
-        Grazie alla possibilità di gestire angolazioni fino a 25° e altezze transmucose fino a 6 mm,  il connettore ExaConnect® consente un flusso di lavoro "semplificato, portando la connessione protesica a livello dei tessuti gengivali. In abbinamento al Ti-Base dedicato, è possibile ottenere una gamma di monconi con angolazioni e altezze transmucose variabili, ideali per approcci One Abutment–One Time.</div>
+        Grazie alla possibilità di gestire angolazioni fino a 25° e altezze transmucose fino a 6 mm,  il connettore ExaConnect® consente un flusso di lavoro semplificato, portando la connessione protesica a livello dei tessuti gengivali. In abbinamento al Ti-Base dedicato, è possibile ottenere una gamma di monconi con angolazioni e altezze transmucose variabili, ideali per approcci One Abutment–One Time.</div>
         <div className="rounded pt-3 min-h-[80px]">
         
                 <Image
@@ -402,7 +402,7 @@ export default function Home() {
       {/* Interno: 1 col su mobile+tablet, 2 col da lg — allineati in alto */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start content-start">
         <div className="rounded pt-3 min-h-[80px]">
-   L'assenza di una vite di connessione tra fixture e moncone rende i MUA Leone estremamente efficienti, poiché richiedono la gestione di una sola vite, quella protesica. Questo semplifica notevolmente le fasi cliniche. I monconi MUA Leone offrono la gamma più ampia sul mercato, con angolazioni fino a 35° e altezze transmucose fino a 7 mm. Sono inoltre disponibili accessori dedicati alle diverse tecniche di ancoraggio protesico, come interfacce CAD-CAM e cilindri da incollaggio.</div>
+   L&#39;assenza di una vite di connessione tra fixture e moncone rende i MUA Leone estremamente efficienti, poiché richiedono la gestione di una sola vite, quella protesica. Questo semplifica notevolmente le fasi cliniche. I monconi MUA Leone offrono la gamma più ampia sul mercato, con angolazioni fino a 35° e altezze transmucose fino a 7 mm. Sono inoltre disponibili accessori dedicati alle diverse tecniche di ancoraggio protesico, come interfacce CAD-CAM e cilindri da incollaggio.</div>
         <div className="rounded pt-3 min-h-[80px]">
         
                 <Image
@@ -440,7 +440,7 @@ export default function Home() {
       {/* Interno: 1 col su mobile+tablet, 2 col da lg — allineati in alto */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start content-start">
         <div className="rounded pt-3 min-h-[80px]">
-        Grazie alla connessione cono Morse, i monconi testa sferica Leone risultano privi di fori e incavi, facilitando la gestione quotidiana dell'igiene orale.
+        Grazie alla connessione cono Morse, i monconi testa sferica Leone risultano privi di fori e incavi, facilitando la gestione quotidiana dell&#39;igiene orale.
         Disponibili sia in versione dritta che angolata a 15°, con tre diverse altezze transmucose, offrono la possibilità di scelta tra varie tipologie di cuffie in base alle esigenze cliniche.</div>
         <div className="rounded pt-3 min-h-[80px]">
         
