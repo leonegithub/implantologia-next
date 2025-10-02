@@ -322,7 +322,7 @@ export default function Home() {
     <div className="bg-gray-100 rounded-lg p-8">
     <h2 className="red text-3xl !leading-[1.20] !mb-6">Sostituzione immediata di due incisivi laterali superiori decidui con impianti XCN® 3.8 Tapered</h2>
     <h3 className="font-bold">Dott. Domenico Guerra, Dott. Giovanni Guerra</h3>
-    <p>Posizionamento post-estrattivo immediato di due impianti 3.8 Tapered e provvisori immediati con monconi temporanei. Dopo trattamento ortodontico, protesizzazione definitiva con corone in zirconia cementate extraoralmente.</p>
+    <p>Posizionamento post-estrattivo immediato di due impianti 3.8 Tapered e provvisori immediati con monconi temporanei. Dopo trattamento ortodontico, protesizzazione definitiva con corone in zirconia cementate extraoralmente. </p>
     <a
         href="https://leone.it/servizi/download/XCNNews-40-Guerra-Guerra.pdf"
         target="_blank"
