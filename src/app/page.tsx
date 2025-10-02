@@ -420,7 +420,7 @@ export default function Home() {
       {/* Interno: 1 col su mobile+tablet, 2 col da lg — allineati in alto */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start content-start">
         <div className="rounded pt-3 min-h-[80px]">
-        Con un semi-angolo di 5°, i monconi conometrici assicurano il fissaggio della struttura protesica mediante cappette preformate in PEEK, sfruttando la frizione conometrica. Questa soluzione, priva di viti e cementi, garantisce elevata stabilità e un sigillo protesico efficace, pur consentendo una. facile rimozione per controlli e igiene orale. Sono disponibili quattro tipologie di cappette con diverse forze di ritenzione, adatte a tutte le configurazioni protesiche.</div>
+        Con un semi-angolo di 5°, i monconi conometrici assicurano il fissaggio della struttura protesica mediante cappette preformate in PEEK, sfruttando la frizione conometrica. Questa soluzione, priva di viti e cementi, garantisce elevata stabilità e un sigillo protesico efficace, pur consentendo una facile rimozione per controlli e igiene orale. Sono disponibili quattro tipologie di cappette con diverse forze di ritenzione, adatte a tutte le configurazioni protesiche.</div>
         <div className="rounded pt-3 min-h-[80px]">
         
                 <Image
