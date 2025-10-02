@@ -73,6 +73,18 @@ export default function RootLayout({
       </head>
 
       <body>
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style={{ display: 'none' }}
+          src="https://www.facebook.com/tr?id=788727910402752&ev=PageView&noscript=1"
+          alt=""
+        />
+      </noscript>
+
+
+
         {/* Disclaimer valido site-wide (una volta accettato non ricompare) */}
         <DisclaimerModal />
 
