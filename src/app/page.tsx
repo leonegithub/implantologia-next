@@ -471,7 +471,7 @@ export default function Home() {
 
 
 
-            <section className="workflow-protesico-digitale mt-15 w-full pt-20 mt-10">
+            <section className="workflow-protesico-digitale w-full ">
                   <h3 className="font-bold red text-4xl my-5 pt-24">Workflow protesico digitale</h3>
 
                 <div className="grid grid-cols-1">
