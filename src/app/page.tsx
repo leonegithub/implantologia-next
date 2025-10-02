@@ -241,8 +241,8 @@ export default function Home() {
             </div>
 
             <div className="md:block lg:grid grid-cols-2 gap-[250px] mt-10">
-                <ShowCaseGrid link={"/soluzioni-cliniche"} title="Progettato per ottime soluzioni cliniche" showCaseProducts={showcaseOne} />
-                <ShowCaseGrid link={"/cono-morse-autobloccante"} title="I vantaggi della connessione cono Morse autobloccante " showCaseProducts={showcaseTwo} />
+                <ShowCaseGrid link={"/soluzioni-cliniche"} title="I vantaggi della connessione cono Morse autobloccante" showCaseProducts={showcaseOne} />
+                <ShowCaseGrid link={"/cono-morse-autobloccante"} title="Progettato per ottime soluzioni cliniche" showCaseProducts={showcaseTwo} />
             </div>
 
 
