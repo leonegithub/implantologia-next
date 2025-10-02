@@ -258,7 +258,7 @@ export default function Home() {
     <div className="bg-gray-100 rounded-lg p-8">
     <h2 className="red text-3xl !leading-[1.20] !mb-6">Ripristino immediato di creste interforaminali atrofiche con impianti XCN® Narrow 2.9 Tapered</h2>
     <h3 className="font-bold">Dott. Andrea Ricci</h3>
-    <p>Posizionamento di tre impianti Narrow 2.9 Tapered con chirurgia guidata flapless e carico immediato con protesi provvisoria in\nPMMA avvitata. Successiva impronta ottica sui MUA per progettazione CAD-CAM della protesi definitiva avvitata in zirconia.</p>
+    <p>Posizionamento di tre impianti Narrow 2.9 Tapered con chirurgia guidata flapless e carico immediato con protesi provvisoria in PMMA avvitata. Successiva impronta ottica sui MUA per progettazione CAD-CAM della protesi definitiva avvitata in zirconia.</p>
     <a
         href="https://leone.it/servizi/download/XCNNews-39-Ricci-Pisa.pdf"
         target="_blank"
@@ -279,7 +279,7 @@ export default function Home() {
     <div className="bg-gray-100 rounded-lg p-8">
     <h2 className="red text-3xl !leading-[1.20] !mb-6">Riabilitazione di mascellare atrofico con impianti XCN® Narrow 2.9 Tapered</h2>
     <h3 className="font-bold">Dott. Francesco Azzola, Dott. Bruno Francesco Barbaro, Prof. Stefano Corbella</h3>
-    <p>Posizionamento di quattro impianti Narrow 2.9 Tapered e contestuale rigenerazione ossea guidata.Dopo la guarigione sommersa, protesizzazione con protesi rimovibile ritenuta da una barra avvitata ai monconi MUA.</p>
+    <p>Posizionamento di quattro impianti Narrow 2.9 Tapered e contestuale rigenerazione ossea guidata. Dopo la guarigione sommersa, protesizzazione con protesi rimovibile ritenuta da una barra avvitata ai monconi MUA.</p>
     <a
         href="https://leone.it/servizi/download/XCNNews-35-Azzola.pdf"
         target="_blank"
@@ -322,7 +322,7 @@ export default function Home() {
     <div className="bg-gray-100 rounded-lg p-8">
     <h2 className="red text-3xl !leading-[1.20] !mb-6">Sostituzione immediata di due incisivi laterali superiori decidui con impianti XCN® 3.8 Tapered</h2>
     <h3 className="font-bold">Dott. Domenico Guerra, Dott. Giovanni Guerra</h3>
-    <p>Posizionamento post-estrattivo immediato di due impianti 3.8 Tapered e provvisori immediati con monconi temporanei.Dopo trattamento ortodontico, protesizzazione definitiva con corone in zirconia cementate extraoralmente.</p>
+    <p>Posizionamento post-estrattivo immediato di due impianti 3.8 Tapered e provvisori immediati con monconi temporanei. Dopo trattamento ortodontico, protesizzazione definitiva con corone in zirconia cementate extraoralmente.</p>
     <a
         href="https://leone.it/servizi/download/XCNNews-40-Guerra-Guerra.pdf"
         target="_blank"
