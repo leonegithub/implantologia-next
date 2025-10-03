@@ -36,7 +36,7 @@ export default function OneForAll() {
                                     "singole a quelle multiple o totali, grazie al micro\n" +
                                     "e macro-design della fixture e all’efficienza della\n" +
                                     "connessione Morse gialla, collaudata da oltre 25\n" +
-                                    "anni in migliaia di casi clinici*."} />
+                                    "anni in migliaia di casi clinici."} />
                             </div>
                         </div>
 
@@ -48,7 +48,7 @@ export default function OneForAll() {
                             "ampiamente superiore\n" +
                             "alle sistematiche avvitate,\n" +
                             "garantisce la massima\n" +
-                            "affidabilità"} />
+                            "affidabilità*"} />
                         <div className="pt-8">
                             <Image
                                 width={600}
