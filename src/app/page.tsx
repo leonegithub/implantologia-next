@@ -384,7 +384,7 @@ export default function Home() {
       {/* Interno: 1 col su mobile+tablet, 2 col da lg — allineati in alto */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start content-start">
         <div className="rounded pt-3 min-h-[80px]">
-        Grazie alla possibilità di gestire angolazioni fino a 25° e altezze transmucose fino a 6 mm,  il connettore ExaConnect® consente un flusso di lavoro semplificato, portando la connessione protesica a livello dei tessuti gengivali. In abbinamento al Ti-Base dedicato, è possibile ottenere una gamma di monconi con angolazioni e altezze transmucose variabili, ideali per approcci One Abutment–One Time.</div>
+        Grazie alla possibilità di gestire angolazioni fino a 25° e altezze transmucose fino a 5 mm,  il connettore ExaConnect® consente un flusso di lavoro semplificato, portando la connessione protesica a livello dei tessuti gengivali. In abbinamento al Ti-Base dedicato, è possibile ottenere una gamma di monconi con angolazioni e altezze transmucose variabili, ideali per approcci One Abutment–One Time.</div>
         <div className="rounded pt-3 min-h-[80px]">
         
                 <Image
