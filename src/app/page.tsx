@@ -21,8 +21,6 @@ import protesiAttacchi from '@/../public/protesi-attacchi.png'
 import protesiCementata from '@/../public/protesi-cementata.png'
 import ProductGrid, { Product } from "@/app/components/productGrid";
 import ShowCaseGrid, {ShowCaseProps} from "@/app/components/showCaseGrid";
-import PicCarousel from "@/app/components/picCarousel";
-import TextBlock from "@/app/components/textBlock";
 import workflowOne from '@/../public/workflow1.png'
 import workflowTwo from '@/../public/workflow2.png'
 import workflowThree from '@/../public/workflow3.png'
@@ -30,10 +28,6 @@ import workflowFour from '@/../public/workflow4.png'
 import workflowFive from '@/../public/workflow5.png'
 import workflowSix from '@/../public/workflow6.png'
 import respoTitle from '@/../public/Small-but-strong.png'
-
-
-
-
 
 // app/page.tsx (estratto)
 import type { Metadata } from "next";

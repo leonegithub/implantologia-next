@@ -57,12 +57,6 @@ export default function DisclaimerModal() {
     setShouldShow(false);
   };
 
-  const decline = () => {
-    writeConsent(false);
-    // Reindirizza a una pagina informativa o al sito corporate
-    window.location.href = "https://www.leone.it"; 
-  };
-
   return (
     <div
       role="dialog"

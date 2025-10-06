@@ -1,5 +1,5 @@
 type TextBlockProps = {
-  title: React.ReactNode;  // <— invece di string
+  title: React.ReactNode;
   text: string;
 };
 

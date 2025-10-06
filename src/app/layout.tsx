@@ -7,7 +7,57 @@ import Script from "next/script";
 import DisclaimerModal from "@/app/components/DisclaimerModal";
 
 export const metadata: Metadata = {
-  title: "Implantologia Leone",
+    metadataBase: new URL("https://implantologia.leone.it"),
+    title: "Connessione cono Morse autobloccante – Tenuta e stabilità meccanica | Leone",
+    description:
+        "Scopri i vantaggi della connessione cono Morse autobloccante: sigillo contro le infiltrazioni batteriche, riduzione dei micromovimenti, stabilità meccanica e gestione ottimale dei tessuti con Platform Switching.",
+    keywords: [
+        "cono Morse autobloccante",
+        "connessione impianto-protesi",
+        "sigillo batterico",
+        "stabilità meccanica",
+        "micromovimenti",
+        "platform switching",
+        "MUA",
+        "ExaConnect",
+        "implantologia Leone",
+        "impianti XCN"
+    ],
+    applicationName: "Implantologia Leone",
+    authors: [{ name: "Leone", url: "https://implantologia.leone.it" }],
+    creator: "Leone",
+    publisher: "Leone",
+    category: "Salute",
+    alternates: {
+        canonical: "https://implantologia.leone.it/cono-morse-autobloccante",
+        languages: {
+            "it-IT": "https://implantologia.leone.it/cono-morse-autobloccante"
+        }
+    },
+    openGraph: {
+        type: "website",
+        locale: "it_IT",
+        siteName: "Implantologia Leone",
+        url: "https://implantologia.leone.it/cono-morse-autobloccante",
+        title: "Connessione cono Morse autobloccante – Tenuta e stabilità meccanica",
+        description:
+            "Sigillo efficace contro le infiltrazioni batteriche e massima stabilità dell’interfaccia impianto-protesi. Scopri come il cono Morse autobloccante migliora l’affidabilità clinica e la gestione dei tessuti molli.",
+        images: [
+            {
+                url: "/og-home.jpg", // 1200x630 consigliato, metti il file in /public/og/
+                width: 1200,
+                height: 630,
+                alt: "Connessione cono Morse autobloccante – Implantologia Leone"
+            }
+        ]
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Connessione cono Morse autobloccante – Tenuta e stabilità meccanica | Leone",
+        description:
+            "Riduzione dei micromovimenti, sigillo antibatterico e Platform Switching: i vantaggi della connessione cono Morse Leone.",
+        images: ["/og-home.jpg"]
+    }
 };
 
 export default function RootLayout({
