@@ -283,14 +283,6 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
-
-
 <div className="carosello w-full lg:w-1/2">
   <h3 className="font-bold red text-4xl my-5 pt-24">Massima Versatilità Protesica</h3>
 
@@ -399,19 +391,6 @@ export default function Home() {
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
             <section className="workflow-protesico-digitale w-full ">
                   <h3 className="font-bold red text-4xl my-5 pt-24">Workflow protesico digitale</h3>
 
@@ -421,26 +400,17 @@ export default function Home() {
                         e alla piena compatibilità con i flussi CAD-CAM, è possibile garantire precisione, rapidità e personalizzazione
                         in ogni fase del trattamento, ottimizzando tempi clinici e risultati estetico-funzionali.</p>
                 </div>
-                <div className="grid md:full grid-cols-6 gap-10">
-                    <div className="col-span-2">
-                        <Image className="w-full h-auto" src={workflowOne} alt={workflowOne.toString()} />
-                    </div>
-                    <div className="col-span-2">
-                        <Image className="w-full h-auto" src={workflowTwo} alt={workflowTwo.toString()} />
-                    </div>
-                    <div className="col-span-2">
-                        <Image className="w-full h-auto" src={workflowThree} alt={workflowThree.toString()} />
-                    </div>
-                    <div className="col-span-2">
-                        <Image className="w-full h-auto" src={workflowFour} alt={workflowFour.toString()} />
-                    </div>
-                    <div className="col-span-2">
-                        <Image className="w-full h-auto" src={workflowFive} alt={workflowFive.toString()} />
-                    </div>
-                    <div className="col-span-2">
-                        <Image className="w-full h-auto" src={workflowSix} alt={workflowSix.toString()} />
-                    </div>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10">
+                    {[workflowOne, workflowTwo, workflowThree, workflowFour, workflowFive, workflowSix].map((img, i) => (
+                        <Image
+                            key={i}
+                            src={img}
+                            alt={`workflow ${i+1}`}
+                            className="w-full h-auto block"
+                        />
+                    ))}
                 </div>
+
                 <p className="!text-sm leading-tight mt-8">Per gentile concessione Dr. Andrea Ricci e Odt. Massimiliano Pisa</p>             
             </section>
         </div>
