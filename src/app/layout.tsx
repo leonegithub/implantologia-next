@@ -99,9 +99,6 @@ export default function RootLayout({
         />
         <link rel="stylesheet" href="https://use.typekit.net/qxk4lzc.css" />
 
-
-
-       
         {/* Meta Pixel */}
         <Script id="facebook-pixel" strategy="afterInteractive">
           {`
@@ -117,8 +114,6 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
-     
-
 
       </head>
 

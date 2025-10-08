@@ -109,12 +109,6 @@ export const metadata: Metadata = {
 };
 
 
-
-
-
-
-
-
 export default function Home() {
     const images = [caso1, caso2, caso3, caso4];
     const products: Product[] = [
@@ -188,7 +182,6 @@ export default function Home() {
 
     return (
         <div className="container mx-auto px-10 pt-4 sm:pt-8 md:!pt-12 lg:!pt-28">
-    
 
             <div className="main-text">
                 <div className="grid grid-cols-6 mb-20 items-center">
@@ -376,24 +369,22 @@ export default function Home() {
         Grazie alla connessione cono Morse, i monconi testa sferica Leone risultano privi di fori e incavi, facilitando la gestione quotidiana dell&#39;igiene orale.
         Disponibili sia in versione dritta che angolata a 15°, con tre diverse altezze transmucose, offrono la possibilità di scelta tra varie tipologie di cuffie in base alle esigenze cliniche.</div>
         <div className="rounded pt-3 min-h-[80px]">
-        
-                <Image
-                            width={300}
-                            src={protesiAttacchi}
-                            alt="protesi cementata"
-                        />
+
+            <Image
+                width={300}
+                src={protesiAttacchi}
+                alt="protesi cementata"
+            />
 
         </div>
       </div>
     </div>
 
-
   </div>
 </div>
 
-            <section className="workflow-protesico-digitale w-full ">
+            <section className="workflow-protesico-digitale w-full">
                   <h3 className="font-bold red text-4xl my-5 pt-24">Workflow protesico digitale</h3>
-
                 <div className="grid grid-cols-1">
                     <p className="mb-10">Il sistema implantare Leone si integra perfettamente nei workflow digitali, offrendo una gestione protesica
                         fluida e completa, dalla corona singola fino alle riabilitazioni su arcata completa. Grazie a componenti dedicati
@@ -401,7 +392,7 @@ export default function Home() {
                         in ogni fase del trattamento, ottimizzando tempi clinici e risultati estetico-funzionali.</p>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10">
-                    {[workflowOne, workflowTwo, workflowThree, workflowFour, workflowFive, workflowSix].map((img, i) => (
+                    {[workflowTwo, workflowOne, workflowFour, workflowThree, workflowSix, workflowFive].map((img, i) => (
                         <Image
                             key={i}
                             src={img}
