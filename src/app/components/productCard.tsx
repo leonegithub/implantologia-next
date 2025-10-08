@@ -20,7 +20,7 @@ export default function ProductCard({ src, alt, href, label }: ProductCardProps)
                     className="object-cover border border-red-600"
                 />
             </div>
-            <Link className="red py-1 md:py-5 sm:text-center md:text-start text-2xl underline block mt-2 mb-10 md:mb-0"href={href}>
+            <Link className="red py-1 md:py-5 text-2xl underline block mt-2 mb-10 md:mb-0"href={href}>
                 {label}
             </Link>
         </div>

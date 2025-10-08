@@ -18,10 +18,10 @@ export default function ShowCaseGrid({ showCaseProducts, title, link }: ShowCase
     return (
         <div className="mt-28">
             {title && (
-                <h2 style={{lineHeight: "35px", minHeight: "150px"}} className="font-bold flex items-center text-3xl red">{title}</h2>
+                <h2 style={{lineHeight: "35px", minHeight: "150px"}} className="font-bold flex items-center text-4xl red">{title}</h2>
             )}
 
-            <div className="grid text-center gap-10 grid-cols-2">
+            <div className="grid gap-10 grid-cols-2 md:grid-cols-4">
                 {showCaseProducts.map((p, i) => (
                     <ShowCaseProduct key={i} {...p} />
                 ))}

@@ -31,6 +31,7 @@ import respoTitle from '@/../public/Small-but-strong.png'
 
 // app/page.tsx (estratto)
 import type { Metadata } from "next";
+import CasoClinico from "@/app/components/casoClinico";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://implantologia.leone.it"),
@@ -186,7 +187,7 @@ export default function Home() {
     ]
 
     return (
-        <div className="container mx-auto px-4 pt-4 sm:pt-8 md:!pt-12 lg:!pt-28">
+        <div className="container mx-auto px-10 pt-4 sm:pt-8 md:!pt-12 lg:!pt-28">
     
 
             <div className="main-text">
@@ -234,7 +235,7 @@ export default function Home() {
                 <ProductGrid products={products} />
             </div>
 
-            <div className="md:block lg:grid grid-cols-2 gap-[250px] mt-10">
+            <div className=" grid-cols-2 gap-[250px] mt-10">
                 <ShowCaseGrid link={"/soluzioni-cliniche"} title="I vantaggi della connessione cono Morse autobloccante" showCaseProducts={showcaseOne} />
                 <ShowCaseGrid link={"/cono-morse-autobloccante"} title="Progettato per ottime soluzioni cliniche" showCaseProducts={showcaseTwo} />
             </div>
@@ -249,87 +250,33 @@ export default function Home() {
 
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
 
-    <div className="bg-gray-100 rounded-lg p-8">
-    <h2 className="red text-3xl !leading-[1.20] !mb-6">Ripristino immediato di creste interforaminali atrofiche con impianti XCN® Narrow 2.9 Tapered</h2>
-    <h3 className="font-bold">Dott. Andrea Ricci</h3>
-    <p>Posizionamento di tre impianti Narrow 2.9 Tapered con chirurgia guidata flapless e carico immediato con protesi provvisoria in PMMA avvitata. Successiva impronta ottica sui MUA per progettazione CAD-CAM della protesi definitiva avvitata in zirconia.</p>
-    <a
-        href="https://leone.it/servizi/download/XCNNews-39-Ricci-Pisa.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 active:bg-red-800"
-        aria-label="Scarica il PDF - XCNNews 39 Ricci Pisa"
-      >
-        Consulta il caso
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M3 10a1 1 0 011-1h7.586L9.293 6.707a1 1 0 111.414-1.414l4.999 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L11.586 11H4a1 1 0 01-1-1z"/>
-        </svg>
-      </a>
-    </div>
+      <CasoClinico
+          title={"Ripristino immediato di creste interforaminali atrofiche con impianti XCN® Narrow 2.9 Tapered"}
+          subtitle={"Dott. Andrea Ricci"}
+          text={"Posizionamento di tre impianti Narrow 2.9 Tapered con chirurgia guidata flapless e carico immediato con protesi provvisoria in PMMA avvitata. Successiva impronta ottica sui MUA per progettazione CAD-CAM della protesi definitiva avvitata in zirconia."}
+          link={"https://leone.it/servizi/download/XCNNews-39-Ricci-Pisa.pdf"}
+      />
 
+      <CasoClinico
+          title={"Riabilitazione di mascellare atrofico con impianti XCN® Narrow 2.9 Tapered"}
+          subtitle={"Dott. Francesco Azzola, Dott. Bruno Francesco Barbaro, Prof. Stefano Corbella"}
+          text={"Posizionamento di quattro impianti Narrow 2.9 Tapered e contestuale rigenerazione ossea guidata. Dopo la guarigione sommersa, protesizzazione con protesi rimovibile ritenuta da una barra avvitata ai monconi MUA."}
+          link={"https://leone.it/servizi/download/XCNNews-35-Azzola.pdf"}
+      />
 
+      <CasoClinico
+          title={"Sostituzione immediata di un incisivo centrale superiore con impianto XCN® 3.8 Tapered"}
+          subtitle={"Dott. Salvatore Belcastro, Dott. Alessio Natali"}
+          text={"Posizionamento post-estrattivo immediato con approccio flapless di un impianto 3.8 Tapered e contestuale rigenerazione ossea guidata. Successiva procedura protesica full digital con moncone Ti-Base customizzato e corona in zirconia."}
+          link={"https://leone.it/servizi/download/XCNNews-40-Belcastro-Natali.pdf"}
+      />
 
-    
-    <div className="bg-gray-100 rounded-lg p-8">
-    <h2 className="red text-3xl !leading-[1.20] !mb-6">Riabilitazione di mascellare atrofico con impianti XCN® Narrow 2.9 Tapered</h2>
-    <h3 className="font-bold">Dott. Francesco Azzola, Dott. Bruno Francesco Barbaro, Prof. Stefano Corbella</h3>
-    <p>Posizionamento di quattro impianti Narrow 2.9 Tapered e contestuale rigenerazione ossea guidata. Dopo la guarigione sommersa, protesizzazione con protesi rimovibile ritenuta da una barra avvitata ai monconi MUA.</p>
-    <a
-        href="https://leone.it/servizi/download/XCNNews-35-Azzola.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 active:bg-red-800"
-        aria-label="Scarica il PDF - XCNNews 39 Ricci Pisa"
-      >
-        Consulta il caso
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M3 10a1 1 0 011-1h7.586L9.293 6.707a1 1 0 111.414-1.414l4.999 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L11.586 11H4a1 1 0 01-1-1z"/>
-        </svg>
-      </a>
-    </div>
-
-
-
-
-
-    <div className="bg-gray-100 rounded-lg p-8">
-    <h2 className="red text-3xl !leading-[1.20] !mb-6">Sostituzione immediata di un incisivo centrale superiore con impianto XCN® 3.8 Tapered</h2>
-    <h3 className="font-bold">Dott. Salvatore Belcastro, Dott. Alessio Natali</h3>
-    <p>Posizionamento post-estrattivo immediato con approccio flapless di un impianto 3.8 Tapered e contestuale rigenerazione ossea guidata. Successiva procedura protesica full digital con moncone Ti-Base customizzato e corona in zirconia.</p>
-    <a
-        href="https://leone.it/servizi/download/XCNNews-40-Belcastro-Natali.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 active:bg-red-800"
-        aria-label="Scarica il PDF - XCNNews 39 Ricci Pisa"
-      >
-        Consulta il caso
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M3 10a1 1 0 011-1h7.586L9.293 6.707a1 1 0 111.414-1.414l4.999 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L11.586 11H4a1 1 0 01-1-1z"/>
-        </svg>
-      </a>
-    </div>
-
-
-
-
-    <div className="bg-gray-100 rounded-lg p-8">
-    <h2 className="red text-3xl !leading-[1.20] !mb-6">Sostituzione immediata di due incisivi laterali superiori decidui con impianti XCN® 3.8 Tapered</h2>
-    <h3 className="font-bold">Dott. Domenico Guerra, Dott. Giovanni Guerra</h3>
-    <p>Posizionamento post-estrattivo immediato di due impianti 3.8 Tapered e provvisori immediati con monconi temporanei. Dopo trattamento ortodontico, protesizzazione definitiva con corone in zirconia cementate extraoralmente. </p>
-    <a
-        href="https://leone.it/servizi/download/XCNNews-40-Guerra-Guerra.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-lg bg-red-600 text-white font-medium hover:bg-red-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 active:bg-red-800"
-        aria-label="Scarica il PDF - XCNNews 39 Ricci Pisa"
-      >
-        Consulta il caso
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-          <path d="M3 10a1 1 0 011-1h7.586L9.293 6.707a1 1 0 111.414-1.414l4.999 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L11.586 11H4a1 1 0 01-1-1z"/>
-        </svg>
-      </a>
-    </div>
+      <CasoClinico
+          title={"Sostituzione immediata di due incisivi laterali superiori decidui con impianti XCN® 3.8 Tapered"}
+          subtitle={"Dott. Domenico Guerra, Dott. Giovanni Guerra"}
+          text={"Posizionamento post-estrattivo immediato di due impianti 3.8 Tapered e provvisori immediati con monconi temporanei. Dopo trattamento ortodontico, protesizzazione definitiva con corone in zirconia cementate extraoralmente."}
+          link={"https://leone.it/servizi/download/XCNNews-40-Guerra-Guerra.pdf"}
+      />
     
     </div>
 </div>

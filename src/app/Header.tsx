@@ -9,9 +9,9 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="container mx-auto fixed top-0 right-0 left-0 z-10">
+    <div className="container mx-auto px-10 fixed top-0 right-0 left-0 z-10">
       <header>
-        <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-800">
+        <nav className="bg-white border-gray-200 dark:bg-gray-800">
           <div className="flex flex-wrap justify-between items-center">
             <a href="https://implantologia.leone.it/" target="_blank" rel="noreferrer">
               <Image width={150} src={logo} alt="logo-rosso" />
@@ -71,22 +71,22 @@ export default function Header() {
 <div className="mt-3 border-t border-gray-200 dark:border-gray-700 pt-2 lg:hidden">
   <ul className="flex flex-col space-y-1">
     <li>
-      <Link href="/" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
+      <Link href="/" className="block py-2 pl-3 pr-4 red hover:text-red-800">
         Impianti Tapered series
       </Link>
     </li>
     <li>
-      <Link href="/narrow-2_9-tapered" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
+      <Link href="/narrow-2_9-tapered" className="block py-2 pl-3 pr-4 red hover:text-red-800 font-medium">
         XCN® Narrow 2.9 Tapered
       </Link>
     </li>
     <li>
-      <Link href="/narrow-3_8-tapered" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
+      <Link href="/narrow-3_8-tapered" className="block py-2 pl-3 pr-4 red hover:text-red-800 font-medium">
         XCN® 3.8 Tapered
       </Link>
     </li>
     <li>
-      <Link href="/kit-chirurgico" className="block py-2 pl-3 pr-4 text-red-700 hover:text-red-800 font-medium">
+      <Link href="/kit-chirurgico" className="block py-2 pl-3 pr-4 red hover:text-red-800 font-medium">
         Kit chirurgico
       </Link>
     </li>
@@ -191,17 +191,17 @@ export default function Header() {
 
           {/* --- BARRA SECONDARIA: solo desktop --- */}
 <div className="hidden lg:block border-t border-gray-200 dark:border-gray-700">
-  <div className="flex items-center space-x-12 py-6">
-    <Link href="/" className="text-red-700 hover:text-red-800 font-medium">
+  <div className="red flex items-center space-x-12 py-6">
+    <Link href="/" className=" hover:text-red-800">
       Impianti Tapered series
     </Link>
-    <Link href="/narrow-2_9-tapered" className="text-red-700 hover:text-red-800 font-medium">
+    <Link href="/narrow-2_9-tapered" className=" hover:text-red-800">
       XCN® Narrow 2.9 Tapered
     </Link>
-    <Link href="/narrow-3_8-tapered" className="text-red-700 hover:text-red-800 font-medium">
+    <Link href="/narrow-3_8-tapered" className=" hover:text-red-800">
       XCN® 3.8 Tapered
     </Link>
-    <Link href="/kit-chirurgico" className="text-red-700 hover:text-red-800 font-medium">
+    <Link href="/kit-chirurgico" className=" hover:text-red-800">
       Kit chirurgico
     </Link>
   </div>
