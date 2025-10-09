@@ -32,6 +32,7 @@ import respoTitle from '@/../public/Small-but-strong.png'
 // app/page.tsx (estratto)
 import type { Metadata } from "next";
 import CasoClinico from "@/app/components/casoClinico";
+import ContactForm from "@/app/components/contactForm";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://implantologia.leone.it"),
@@ -404,6 +405,8 @@ export default function Home() {
 
                 <p className="!text-sm leading-tight mt-8">Per gentile concessione Dr. Andrea Ricci e Odt. Massimiliano Pisa</p>             
             </section>
+
+            <ContactForm />
         </div>
     );
 }
