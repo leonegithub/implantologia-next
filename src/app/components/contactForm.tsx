@@ -6,9 +6,8 @@ export default function ContactForm() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
     const [errorMessage, setErrorMessage] = useState('');
-    const [trackingCookie, setTrackingCookie] = useState<string | null>(null);
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    const HandleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
         setSubmitStatus('idle');
@@ -21,6 +20,9 @@ export default function ContactForm() {
         const flgPrivacy = formData.get('flg_privacy') ? "1" : "0";
         const flgComunicazioni = formData.get('flg_comunicazioni_commerciali') ?? "0";
 
+        const k = new URLSearchParams(window.location.search).get("k");
+        setTrackingCookie(params.get(k));
+
         formData.set('flg_privacy', flgPrivacy);
         formData.set('flg_comunicazioni_commerciali', flgComunicazioni.toString());
 
@@ -28,11 +30,9 @@ export default function ContactForm() {
         formData.append('lingua', 'IT');
         formData.append('paese', 'IT');
         formData.append('progetto', 'implantologia.leone');
-        useEffect(() => {
-            const k = new URLSearchParams(window.location.search).get("k");
-            setTrackingCookie(params.get(k));
-            console.log("valore di k: ", k)
-        }, []);
+        if (k) formData.append("tracking_cookie", k)
+        console.log("valore di k: ", k)
+
         /*formData.append("id_campagna", "4");*/
 
         try {
