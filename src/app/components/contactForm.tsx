@@ -21,7 +21,6 @@ export default function ContactForm() {
         const flgComunicazioni = formData.get('flg_comunicazioni_commerciali') ?? "0";
 
         const k = new URLSearchParams(window.location.search).get("k");
-        setTrackingCookie(params.get(k));
 
         formData.set('flg_privacy', flgPrivacy);
         formData.set('flg_comunicazioni_commerciali', flgComunicazioni.toString());
