@@ -1,14 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-import {useSearchParams} from "next/navigation";
+import {useEffect, useState} from 'react';
 
 export default function ContactForm() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
     const [errorMessage, setErrorMessage] = useState('');
-    const trackingCookie = useSearchParams().get("k");
-    console.log(trackingCookie);
+    const [trackingCookie, setTrackingCookie] = useState<string | null>(null);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -30,7 +28,11 @@ export default function ContactForm() {
         formData.append('lingua', 'IT');
         formData.append('paese', 'IT');
         formData.append('progetto', 'implantologia.leone');
-        if (trackingCookie) formData.append("tracking_cookie", trackingCookie);
+        useEffect(() => {
+            const k = new URLSearchParams(window.location.search).get("k");
+            setTrackingCookie(params.get(k));
+            console.log("valore di k: ", k)
+        }, []);
         /*formData.append("id_campagna", "4");*/
 
         try {
