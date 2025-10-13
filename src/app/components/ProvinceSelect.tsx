@@ -16,7 +16,7 @@ export default function ProvinceSelect({ onChange }: { onChange: (provincia: str
     const [province, setProvince] = useState<ProvinceSelectProps[]>([]);
 
     useEffect(() => {
-        fetch("https://php.leone.it/api/GetProvincie.php", {
+        fetch(url, {
             headers: {
                 Authorization: "Bearer wlfca9P8Zn0zQt4zwpcDne4KJROqEOAzIy3dr0Eyxhbzhqz4ydddgjc"
             }
