@@ -93,12 +93,6 @@ export default function Header() {
   </ul>
 </div>
 
-
-
-
-
-
-
               <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-12 lg:mt-0">
 
                 <li>
@@ -204,6 +198,9 @@ export default function Header() {
     <Link href="/kit-chirurgico" className=" hover:text-red-800">
       Kit chirurgico
     </Link>
+      <Link href="/kit-chirurgico" className=" hover:text-red-800">
+          Contattaci
+      </Link>
   </div>
 </div>
 

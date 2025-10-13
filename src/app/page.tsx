@@ -303,7 +303,6 @@ export default function Home() {
       </div>
     </div>
 
-
     {/* CARD */}
     <div className="rounded-lg pt-4 pb-4">
       <div className="w-full font-semibold text-2xl red">Protesi avvitata per elementi singoli con ExaConnect®</div>

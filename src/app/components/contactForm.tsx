@@ -1,11 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import ProvinceSelect from "@/app/components/ProvinceSelect";
 
 export default function ContactForm() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
     const [errorMessage, setErrorMessage] = useState('');
+    const [selectedProvincia, setSelectedProvincia] = useState('');
+    const [selectedRegione, setSelectedRegione] = useState('');
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -22,15 +25,23 @@ export default function ContactForm() {
 
         const k = new URLSearchParams(window.location.search).get("k");
 
+        const selezionati = formData.getAll("informazioni");
+        const informazioni = selezionati.join(", ")
+
         formData.set('flg_privacy', flgPrivacy);
         formData.set('flg_comunicazioni_commerciali', flgComunicazioni.toString());
 
         // Aggiungi i campi automatici
         formData.append('lingua', 'IT');
         formData.append('paese', 'IT');
-        formData.append('progetto', 'implantologia.leone');
+        formData.append('progetto', 'implantologia');
+        formData.append("informazioni", informazioni);
+        formData.append("modello", "implantologia");
+        formData.append("provincia", selectedProvincia);
+        formData.append("regione", selectedRegione);
         if (k) formData.append("tracking_cookie", k)
         console.log("valore di k: ", k)
+        console.log("valore di informazioni: ", informazioni);
 
         /*formData.append("id_campagna", "4");*/
 
@@ -73,7 +84,24 @@ export default function ContactForm() {
     return (
         <>
             <form className="bg-white rounded-lg mt-10 mb-10" onSubmit={handleSubmit}>
-                <h3 className="text-4xl font-bold mb-6 red">Contattaci</h3>
+                <h3 className="font-bold red text-4xl my-5 pt-24">Contattaci</h3>
+
+                <span className="checkes flex items-center">
+                    Richiedi informazioni per:
+                    <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        <input className="w-4 dark:border-gray-600w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" type="checkbox" name="informazioni" value="Sistema implantare" />
+                        Sistema implantare
+                    </label>
+                    <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        <input className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" type="checkbox" name="informazioni" value="Offerte" />
+                        Offerte
+                    </label>
+                    <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        <input className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" type="checkbox" name="informazioni" value="Corsi" />
+                        Corsi
+                    </label>
+
+                </span>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
@@ -132,6 +160,16 @@ export default function ContactForm() {
                             disabled={isSubmitting}
                             className="block w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
                         />
+                    </div>
+
+                    <div>
+                        <label htmlFor="provincia" className="block mb-2 text-sm font-medium text-gray-900">
+                            Provincia *
+                        </label>
+                        <ProvinceSelect onChange={(provincia, regione) => {
+                            setSelectedRegione(regione);
+                            setSelectedProvincia(provincia)
+                        }} />
                     </div>
                 </div>
 
