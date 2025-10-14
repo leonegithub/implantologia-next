@@ -86,7 +86,7 @@ export default function Header() {
       </Link>
     </li>
     <li>
-      <Link href="/kit-chirurgico" className="block py-2 pl-3 pr-4 red hover:text-red-800 font-medium">
+      <Link href="/#contact-form" className="block py-2 pl-3 pr-4 red hover:text-red-800 font-medium">
         Kit chirurgico
       </Link>
     </li>
@@ -198,7 +198,7 @@ export default function Header() {
     <Link href="/kit-chirurgico" className=" hover:text-red-800">
       Kit chirurgico
     </Link>
-      <Link href="/kit-chirurgico" className=" hover:text-red-800">
+      <Link href="/#contact-form" className=" hover:text-red-800">
           Contattaci
       </Link>
   </div>

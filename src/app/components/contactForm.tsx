@@ -9,6 +9,9 @@ export default function ContactForm() {
     const [errorMessage, setErrorMessage] = useState('');
     const [selectedProvincia, setSelectedProvincia] = useState('');
     const [selectedRegione, setSelectedRegione] = useState('');
+    const [selectedInfo, setSelectedInfo] = useState<string[]>([]);
+
+    const infoOptions = ["Sistema implantare", "Offerte", "Corsi"];
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -25,8 +28,7 @@ export default function ContactForm() {
 
         const k = new URLSearchParams(window.location.search).get("k");
 
-        const selezionati = formData.getAll("informazioni");
-        const informazioni = selezionati.join(", ")
+        const informazioni = selectedInfo.join(", ");
 
         formData.set('flg_privacy', flgPrivacy);
         formData.set('flg_comunicazioni_commerciali', flgComunicazioni.toString());
@@ -86,22 +88,35 @@ export default function ContactForm() {
             <form className="bg-white rounded-lg mt-10 mb-10" onSubmit={handleSubmit}>
                 <h3 className="font-bold red text-4xl my-5 pt-24">Contattaci</h3>
 
-                <span className="checkes flex items-center">
-                    Richiedi informazioni per:
-                    <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                        <input className="w-4 dark:border-gray-600w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" type="checkbox" name="informazioni" value="Sistema implantare" />
-                        Sistema implantare
-                    </label>
-                    <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                        <input className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" type="checkbox" name="informazioni" value="Offerte" />
-                        Offerte
-                    </label>
-                    <label className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                        <input className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" type="checkbox" name="informazioni" value="Corsi" />
-                        Corsi
-                    </label>
-
-                </span>
+                <div className="my-5">
+                    <p className="mb-3 text-sm font-medium text-gray-700">Richiedi informazioni per:</p>
+                    <div className="flex flex-wrap gap-2">
+                        {infoOptions.map(option => {
+                            const selected = selectedInfo.includes(option);
+                            return (
+                                <button
+                                    key={option}
+                                    type="button"
+                                    disabled={isSubmitting}
+                                    className={`font-medium rounded-lg text-sm px-5 py-2.5 text-center transition-colors focus:ring-4 focus:outline-none
+                                        ${selected
+                                            ? "bg-red-600 text-white border border-red-600 hover:bg-red-600 focus:ring-red-300"
+                                            : "text-red-600 bg-white border border-red-600 hover:bg-red-600 hover:text-white focus:ring-red-300"}
+                                        disabled:opacity-50 disabled:cursor-not-allowed`}
+                                    onClick={() => {
+                                        setSelectedInfo(prev =>
+                                            prev.includes(option)
+                                                ? prev.filter(i => i !== option)
+                                                : [...prev, option]
+                                        );
+                                    }}
+                                >
+                                    {option}
+                                </button>
+                            );
+                        })}
+                    </div>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
