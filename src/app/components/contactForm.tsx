@@ -98,7 +98,7 @@ export default function ContactForm() {
                                     key={option}
                                     type="button"
                                     disabled={isSubmitting}
-                                    className={`font-medium rounded-lg text-sm px-5 py-2.5 text-center transition-colors focus:ring-4 focus:outline-none
+                                    className={`font-medium cursor-pointer rounded-lg text-sm px-5 py-2.5 text-center transition-colors focus:ring-4 focus:outline-none
                                         ${selected
                                             ? "bg-red-600 text-white border border-red-600 hover:bg-red-600 focus:ring-red-300"
                                             : "text-red-600 bg-white border border-red-600 hover:bg-red-600 hover:text-white focus:ring-red-300"}
