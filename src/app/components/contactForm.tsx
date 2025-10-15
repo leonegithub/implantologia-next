@@ -41,7 +41,7 @@ export default function ContactForm() {
         formData.append("modello", "implantologia");
         formData.append("provincia", selectedProvincia);
         formData.append("regione", selectedRegione);
-        formData.append("id_campagna", "4");
+        formData.append("id_campagna", "1");
         if (k) formData.append("tracking_cookie", k)
         console.log("valore di k: ", k)
         console.log("valore di informazioni: ", informazioni);
