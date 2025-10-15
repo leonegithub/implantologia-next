@@ -41,11 +41,14 @@ export default function ContactForm() {
         formData.append("modello", "implantologia");
         formData.append("provincia", selectedProvincia);
         formData.append("regione", selectedRegione);
+        formData.append("id_campagna", "4");
         if (k) formData.append("tracking_cookie", k)
         console.log("valore di k: ", k)
         console.log("valore di informazioni: ", informazioni);
 
-        /*formData.append("id_campagna", "4");*/
+        for (const [key, value] of formData.entries()) {
+            console.log(key,  value);
+        }
 
         try {
             const response = await fetch('https://php.leone.it/api/SendLead.php', {
